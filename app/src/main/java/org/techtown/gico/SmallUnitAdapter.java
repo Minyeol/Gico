@@ -77,7 +77,7 @@ public class SmallUnitAdapter extends RecyclerView.Adapter<SmallUnitAdapter.View
         }
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder{
         TextView textView;
         TextView textView2;
 

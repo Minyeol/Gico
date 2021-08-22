@@ -14,7 +14,7 @@ public class UnitAdapter extends RecyclerView.Adapter<UnitAdapter.ViewHolder> im
     ArrayList<Unit> items = new ArrayList<Unit>();
     OnUnitItemClickListener listener;
 
-    static class ViewHolder extends RecyclerView.ViewHolder{
+    public static class ViewHolder extends RecyclerView.ViewHolder{
         TextView textView;
         public ViewHolder(View itemView, final OnUnitItemClickListener listener) {
             super(itemView);
