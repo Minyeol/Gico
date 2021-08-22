@@ -52,7 +52,7 @@ public class FragmentStudyUnit1 extends Fragment {
                     transaction.commit();
                 }
                 else if (position == 1) {
-                    // 1-1단원 페이지로 전환(content1)
+                    // 1-2단원 페이지로 전환(content1)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent2 fragmentContent2 = new FragmentContent2();
                     transaction.replace(R.id.container, fragmentContent2);
