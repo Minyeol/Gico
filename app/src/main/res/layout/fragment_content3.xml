@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +8,47 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="1-3에 대한 내용"/>
+        android:layout_height="wrap_content"
+        android:text="1-3에 대한 내용" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/homeButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="92dp"
+        android:layout_toStartOf="@+id/forwardButton3"
+        android:layout_toLeftOf="@+id/forwardButton3"
+        android:layout_toEndOf="@+id/backButton3"
+        android:layout_toRightOf="@+id/backButton3"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>
