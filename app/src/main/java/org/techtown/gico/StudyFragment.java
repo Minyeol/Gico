@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -14,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
 
-public class Template_study extends Fragment {
+public class StudyFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.template_study, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study, container, false);
 
         RecyclerView recyclerView = rootView.findViewById(R.id.recyclerView);
 

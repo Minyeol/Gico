@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import org.techtown.gico.R;
-import org.techtown.gico.Template_study;
+import org.techtown.gico.StudyFragment;
 
 public class FragmentContent3 extends Fragment {
     ImageButton backButton3, homeButton3, forwardButton3;
@@ -42,8 +42,8 @@ public class FragmentContent3 extends Fragment {
             public void onClick(View v) {
                 // 홈 화면으로 전환
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                Template_study template_study = new Template_study();
-                transaction.replace(R.id.container, template_study);
+                StudyFragment studyFragment = new StudyFragment();
+                transaction.replace(R.id.container, studyFragment);
                 transaction.commit();
             }
         });

@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import org.techtown.gico.R;
-import org.techtown.gico.SmallUnitAdapter;
-import org.techtown.gico.Template_study;
+import org.techtown.gico.StudyFragment;
 
 public class FragmentContent1 extends Fragment {
 
@@ -33,8 +31,8 @@ public class FragmentContent1 extends Fragment {
             public void onClick(View v) {
                 // 홈 화면으로 전환
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                Template_study template_study = new Template_study();
-                transaction.replace(R.id.container, template_study);
+                StudyFragment studyFragment = new StudyFragment();
+                transaction.replace(R.id.container, studyFragment);
                 transaction.commit();
             }
         });
