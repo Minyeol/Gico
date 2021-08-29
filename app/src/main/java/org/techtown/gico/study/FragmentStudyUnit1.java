@@ -20,6 +20,7 @@ import org.techtown.gico.Unit;
 import org.techtown.gico.UnitAdapter;
 import org.techtown.gico.study.unit1.FragmentContent1;
 import org.techtown.gico.study.unit1.FragmentContent2;
+import org.techtown.gico.study.unit1.FragmentContent3;
 
 public class FragmentStudyUnit1 extends Fragment {
 
@@ -52,13 +53,18 @@ public class FragmentStudyUnit1 extends Fragment {
                     transaction.commit();
                 }
                 else if (position == 1) {
-                    // 1-2단원 페이지로 전환(content1)
+                    // 1-2단원 페이지로 전환(content2)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent2 fragmentContent2 = new FragmentContent2();
                     transaction.replace(R.id.container, fragmentContent2);
                     transaction.commit();
                 }
                 else if (position == 2) {
+                    // 1-3단원 페이지로 전환(content3)
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentContent3 fragmentContent3 = new FragmentContent3();
+                    transaction.replace(R.id.container, fragmentContent3);
+                    transaction.commit();
                 }
             }
         });
