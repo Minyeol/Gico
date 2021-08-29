@@ -9,10 +9,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1-3에 대한 내용" />
+        android:text="4-5에 대한 내용" />
 
     <ImageButton
-        android:id="@+id/homeButton4_3"
+        android:id="@+id/homeButton4_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -21,26 +21,12 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="92dp"
-        android:layout_toStartOf="@+id/forwardButton4_3"
-        android:layout_toLeftOf="@+id/forwardButton4_3"
-        android:layout_toEndOf="@+id/backButton4_3"
-        android:layout_toRightOf="@+id/backButton4_3"
+        android:layout_toEndOf="@+id/backButton4_5"
+        android:layout_toRightOf="@+id/backButton4_5"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton4_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="92dp"
-        android:src="@drawable/forward_button" />
-
-    <ImageButton
-        android:id="@+id/backButton4_3"
+        android:id="@+id/backButton4_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

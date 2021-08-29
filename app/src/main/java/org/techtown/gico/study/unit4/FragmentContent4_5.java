@@ -14,30 +14,29 @@ import org.techtown.gico.StudyFragment;
 import org.techtown.gico.study.unit1.FragmentContent2;
 
 public class FragmentContent4_5 extends Fragment {
-    ImageButton backButton3, homeButton3, forwardButton3;
+    ImageButton homeButton4_5, backButton4_5;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content4_3, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content4_5, container, false);
 
-        backButton3 = rootView.findViewById(R.id.backButton3);
-        homeButton3 = rootView.findViewById(R.id.homeButton3);
-        forwardButton3 = rootView.findViewById(R.id.forwardButton3);
+        backButton4_5 = rootView.findViewById(R.id.backButton4_5);
+        homeButton4_5 = rootView.findViewById(R.id.homeButton4_5);
 
-        backButton3.setOnClickListener(new View.OnClickListener() {
+        backButton4_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 이전 화면으로 전환(FragmentContent2)
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent2 fragmentContent2 = new FragmentContent2();
-                transaction.replace(R.id.container, fragmentContent2);
+                FragmentContent4_4 fragmentContent4_4 = new FragmentContent4_4();
+                transaction.replace(R.id.container, fragmentContent4_4);
                 transaction.commit();
             }
         });
 
-        homeButton3.setOnClickListener(new View.OnClickListener() {
+        homeButton4_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 홈 화면으로 전환
@@ -45,13 +44,6 @@ public class FragmentContent4_5 extends Fragment {
                 StudyFragment studyFragment = new StudyFragment();
                 transaction.replace(R.id.container, studyFragment);
                 transaction.commit();
-            }
-        });
-
-        forwardButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
             }
         });
 

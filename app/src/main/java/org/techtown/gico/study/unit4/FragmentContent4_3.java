@@ -12,9 +12,10 @@ import androidx.fragment.app.FragmentTransaction;
 import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
 import org.techtown.gico.study.unit1.FragmentContent2;
+import org.techtown.gico.study.unit1.FragmentContent3;
 
 public class FragmentContent4_3 extends Fragment {
-    ImageButton backButton3, homeButton3, forwardButton3;
+    ImageButton backButton4_3, homeButton4_3, forwardButton4_3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -22,22 +23,22 @@ public class FragmentContent4_3 extends Fragment {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content4_3, container, false);
 
-        backButton3 = rootView.findViewById(R.id.backButton3);
-        homeButton3 = rootView.findViewById(R.id.homeButton3);
-        forwardButton3 = rootView.findViewById(R.id.forwardButton3);
+        backButton4_3 = rootView.findViewById(R.id.backButton4_3);
+        homeButton4_3 = rootView.findViewById(R.id.homeButton4_3);
+        forwardButton4_3 = rootView.findViewById(R.id.forwardButton4_3);
 
-        backButton3.setOnClickListener(new View.OnClickListener() {
+        backButton4_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 이전 화면으로 전환(FragmentContent2)
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent2 fragmentContent2 = new FragmentContent2();
-                transaction.replace(R.id.container, fragmentContent2);
+                FragmentContent4_2 fragmentContent4_2 = new FragmentContent4_2();
+                transaction.replace(R.id.container, fragmentContent4_2);
                 transaction.commit();
             }
         });
 
-        homeButton3.setOnClickListener(new View.OnClickListener() {
+        homeButton4_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 홈 화면으로 전환
@@ -48,10 +49,14 @@ public class FragmentContent4_3 extends Fragment {
             }
         });
 
-        forwardButton3.setOnClickListener(new View.OnClickListener() {
+        forwardButton4_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // 다음 화면으로 전환(FragmentContent3)
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentContent4_4 fragmentContent4_4 = new FragmentContent4_4();
+                transaction.replace(R.id.container, fragmentContent4_4);
+                transaction.commit();
             }
         });
 

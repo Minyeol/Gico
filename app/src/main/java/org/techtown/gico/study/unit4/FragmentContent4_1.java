@@ -15,7 +15,7 @@ import org.techtown.gico.study.unit1.FragmentContent2;
 
 public class FragmentContent4_1 extends Fragment {
 
-    ImageButton homeButton1, forwardButton1;
+    ImageButton homeButton4_1, forwardButton4_1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -23,10 +23,10 @@ public class FragmentContent4_1 extends Fragment {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content4_1, container, false);
 
-        homeButton1 = rootView.findViewById(R.id.homeButton1);
-        forwardButton1 = rootView.findViewById(R.id.forwardButton1);
+        homeButton4_1 = rootView.findViewById(R.id.homeButton4_1);
+        forwardButton4_1 = rootView.findViewById(R.id.forwardButton4_1);
 
-        homeButton1.setOnClickListener(new View.OnClickListener() {
+        homeButton4_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 홈 화면으로 전환
@@ -37,14 +37,14 @@ public class FragmentContent4_1 extends Fragment {
             }
         });
 
-        forwardButton1.setOnClickListener(new View.OnClickListener() {
+        forwardButton4_1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // 1-2단원 페이지로 전환(content1)
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent2 fragmentContent2 = new FragmentContent2();
-                transaction.replace(R.id.container, fragmentContent2);
+                FragmentContent4_2 fragmentContent4_2 = new FragmentContent4_2();
+                transaction.replace(R.id.container, fragmentContent4_2);
                 transaction.commit();
             }
         });
