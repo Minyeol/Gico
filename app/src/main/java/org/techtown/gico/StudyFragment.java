@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
+import org.techtown.gico.study.FragmentStudyUnit4;
 
 public class StudyFragment extends Fragment {
     @Nullable
@@ -49,6 +50,13 @@ public class StudyFragment extends Fragment {
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit1 fragmentStudyUnit1 = new FragmentStudyUnit1();
                     transaction.replace(R.id.container, fragmentStudyUnit1);
+                    transaction.commit();
+                }
+                if (position == 3) {
+                    // 4단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit4 fragmentStudyUnit4 = new FragmentStudyUnit4();
+                    transaction.replace(R.id.container, fragmentStudyUnit4);
                     transaction.commit();
                 }
                 else {
