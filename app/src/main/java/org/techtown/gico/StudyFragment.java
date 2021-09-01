@@ -29,7 +29,7 @@ public class StudyFragment extends Fragment {
         adapter.addItem(new Unit("1. 기본 입출력"));
         adapter.addItem(new Unit("2. 조건문"));
         adapter.addItem(new Unit("3. 반복문"));
-        adapter.addItem(new Unit("4. 리눅스"));
+        adapter.addItem(new Unit("4. 리눅스", R.drawable.linux_icon));
         adapter.addItem(new Unit("5. 함수"));
         adapter.addItem(new Unit("6. 재귀함수"));
         adapter.addItem(new Unit("7. 포인터"));
@@ -38,7 +38,6 @@ public class StudyFragment extends Fragment {
         adapter.addItem(new Unit("10. 파일입출력"));
         adapter.addItem(new Unit("11. 정렬"));
         adapter.addItem(new Unit("12. 랜덤"));
-
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(new OnUnitItemClickListener() {

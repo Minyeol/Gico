@@ -52,7 +52,7 @@ public class FragmentContent4_3 extends Fragment {
         forwardButton4_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 다음 화면으로 전환(FragmentContent3)
+                // 다음 화면으로 전환(FragmentContent4)
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 FragmentContent4_4 fragmentContent4_4 = new FragmentContent4_4();
                 transaction.replace(R.id.container, fragmentContent4_4);

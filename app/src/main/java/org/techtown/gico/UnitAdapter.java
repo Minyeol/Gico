@@ -3,6 +3,7 @@ package org.techtown.gico;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,11 +17,12 @@ public class UnitAdapter extends RecyclerView.Adapter<UnitAdapter.ViewHolder> im
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         TextView textView;
+        ImageView imageView;
         public ViewHolder(View itemView, final OnUnitItemClickListener listener) {
             super(itemView);
 
             textView = itemView.findViewById(R.id.textView);
-
+            imageView = itemView.findViewById(R.id.imageView);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view){
@@ -36,7 +38,7 @@ public class UnitAdapter extends RecyclerView.Adapter<UnitAdapter.ViewHolder> im
         public void setItem(Unit item){
             textView.setText(item.getUnit());
         }
-
+        public void setItemImage(Unit item) { imageView.setImageResource(item.getRes());}
 
     }
     @NonNull
@@ -61,6 +63,7 @@ public class UnitAdapter extends RecyclerView.Adapter<UnitAdapter.ViewHolder> im
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         Unit item = items.get(position);
         viewHolder.setItem(item);
+        viewHolder.setItemImage(item);
     }
 
     @Override

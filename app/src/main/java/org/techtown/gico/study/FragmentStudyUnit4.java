@@ -22,6 +22,7 @@ import org.techtown.gico.study.unit4.FragmentContent4_2;
 import org.techtown.gico.study.unit4.FragmentContent4_3;
 import org.techtown.gico.study.unit4.FragmentContent4_4;
 import org.techtown.gico.study.unit4.FragmentContent4_5;
+import org.techtown.gico.study.unit4.FragmentContent4_6;
 
 public class FragmentStudyUnit4 extends Fragment {
 
@@ -41,6 +42,7 @@ public class FragmentStudyUnit4 extends Fragment {
         adapter.addItem(new SmallUnit("4-3.", "디렉토리 생성 및 삭제 관련 명령어"));
         adapter.addItem(new SmallUnit("4-4.", "파일 관련 명령어"));
         adapter.addItem(new SmallUnit("4-5.", "참고사항"));
+        adapter.addItem(new SmallUnit("4-6", "명령어 정리"));
 
         smallRecyclerView1.setAdapter(adapter);
 
@@ -49,38 +51,45 @@ public class FragmentStudyUnit4 extends Fragment {
             public void onItemClick(SmallUnitAdapter.ViewHolder holder, View view, int position) {
                 SmallUnit item = adapter.getItem(position);
                 if (position == 0) {
-                    // 1-1단원 페이지로 전환(content1)
+                    // 4-1단원 페이지로 전환(content4_1)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent4_1 fragmentContent4_1 = new FragmentContent4_1();
                     transaction.replace(R.id.container, fragmentContent4_1);
                     transaction.commit();
                 }
                 else if (position == 1) {
-                    // 1-2단원 페이지로 전환(content2)
+                    // 4-2단원 페이지로 전환(content4_2)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent4_2 fragmentContent4_2 = new FragmentContent4_2();
                     transaction.replace(R.id.container, fragmentContent4_2);
                     transaction.commit();
                 }
                 else if (position == 2) {
-                    // 1-3단원 페이지로 전환(content3)
+                    // 4-3단원 페이지로 전환(content4_3)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent4_3 fragmentContent4_3 = new FragmentContent4_3();
                     transaction.replace(R.id.container, fragmentContent4_3);
                     transaction.commit();
                 }
                 else if (position == 3) {
-                    // 1-3단원 페이지로 전환(content3)
+                    // 4-4단원 페이지로 전환(content4_4)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent4_4 fragmentContent4_4 = new FragmentContent4_4();
                     transaction.replace(R.id.container, fragmentContent4_4);
                     transaction.commit();
                 }
                 else if (position == 4) {
-                    // 1-3단원 페이지로 전환(content3)
+                    // 4-5단원 페이지로 전환(content4_5)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentContent4_5 fragmentContent4_5 = new FragmentContent4_5();
                     transaction.replace(R.id.container, fragmentContent4_5);
+                    transaction.commit();
+                }
+                else if (position == 5) {
+                    // 4-6단원 페이지로 전환(content4_6)
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentContent4_6 fragmentContent4_6 = new FragmentContent4_6();
+                    transaction.replace(R.id.container, fragmentContent4_6);
                     transaction.commit();
                 }
             }
