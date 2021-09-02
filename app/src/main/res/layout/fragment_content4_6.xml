@@ -7,8 +7,9 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
+        android:adjustViewBounds="true"
         android:layout_width="match_parent"
-        android:layout_height="285dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
@@ -19,11 +20,13 @@
         android:id="@+id/homeButton4_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
         android:layout_marginBottom="30dp"
         android:layout_toEndOf="@+id/backButton4_6"
         android:layout_toRightOf="@+id/backButton4_6"

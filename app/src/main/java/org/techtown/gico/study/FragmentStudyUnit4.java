@@ -1,9 +1,11 @@
 package org.techtown.gico.study;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -14,6 +16,7 @@ import org.techtown.gico.OnSmallUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
+import org.techtown.gico.StudyFragment;
 import org.techtown.gico.study.unit1.FragmentContent1;
 import org.techtown.gico.study.unit1.FragmentContent2;
 import org.techtown.gico.study.unit1.FragmentContent3;
@@ -29,8 +32,20 @@ public class FragmentStudyUnit4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        ImageButton homeButton4;
+
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit4, container, false);
 
+        homeButton4 = rootView.findViewById(R.id.homeButton4);
+        homeButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                StudyFragment studyFragment = new StudyFragment();
+                transaction.replace(R.id.container, studyFragment);
+                transaction.commit();
+            }
+        });
         RecyclerView smallRecyclerView1 = rootView.findViewById(R.id.smallRecyclerView4);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext(), LinearLayoutManager.VERTICAL, false);

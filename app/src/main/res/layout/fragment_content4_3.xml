@@ -8,7 +8,8 @@
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="410dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton4_3"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -16,7 +17,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp">
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,8 +32,9 @@
                 android:text="  다음으로는 디렉토리 생성 및 삭제에 관한 명령어들을 알아볼 것입니다. 그 전에 실행 창이 지저분하니 clear 명령어를 입력하여 줍시다. clear 명령어는 기존에 입력한 명령어들이 더 이상 보이지 않도록 해줍니다. 디렉토리를 생성할 때는 mkdir이라는 명령어를 사용합니다. mkdir 뒤에 원하는 디렉토리 이름을 입력하면, 그 이름을 가진 디렉토리가 생성됩니다. 디렉토리를 삭제할 때는 rmdir 명령어를 사용합니다. rmdir 명령어 뒤에 삭제할 디렉토리 이름을 입력하면 해당 디렉토리를 삭제할 수 있습니다. 참고로 디렉토리이름 입력 중 tab키를 누르면 자동완성 기능을 사용할 수 있습니다. 단, 디렉토리 안에 정보가 들어있다면 rmdir 명령어로는 삭제할 수 없습니다. 만약 정보가 포함된 디렉토리를 삭제하고 싶다면 rm –r명령어를 사용하면 됩니다. 그러나 정보가 있는 디렉토리를 삭제할 수 있는 만큼 rm –r 명령어는 사용시에 유용한 자료가 삭제되지 않도록 주의해야 합니다. 사용 예시는 다음과 같습니다. \n" />
 
             <ImageView
+                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
-                android:layout_height="410dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"

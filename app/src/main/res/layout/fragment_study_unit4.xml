@@ -8,21 +8,20 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/smallRecyclerView4"
         android:layout_width="match_parent"
-        android:layout_height="604dp"
+        android:layout_height="504dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginTop="127dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="130dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -33,4 +32,20 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/chapter7" />
+
+    <ImageButton
+        android:id="@+id/homeButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/home_button"/>
 </RelativeLayout>
