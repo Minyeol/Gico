@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -14,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
 
-public class Template_study extends Fragment {
+public class StudyFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.template_study, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study, container, false);
 
         RecyclerView recyclerView = rootView.findViewById(R.id.recyclerView);
 
@@ -26,8 +25,18 @@ public class Template_study extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         UnitAdapter adapter = new UnitAdapter();
 
-        adapter.addItem(new Unit("0. Visual Studio 실행"));
         adapter.addItem(new Unit("1. 기본 입출력"));
+        adapter.addItem(new Unit("2. 조건문"));
+        adapter.addItem(new Unit("3. 반복문"));
+        adapter.addItem(new Unit("4. 리눅스"));
+        adapter.addItem(new Unit("5. 함수"));
+        adapter.addItem(new Unit("6. 재귀함수"));
+        adapter.addItem(new Unit("7. 포인터"));
+        adapter.addItem(new Unit("8. 배열"));
+        adapter.addItem(new Unit("9. 구조체"));
+        adapter.addItem(new Unit("10. 파일입출력"));
+        adapter.addItem(new Unit("11. 정렬"));
+        adapter.addItem(new Unit("12. 랜덤"));
 
         recyclerView.setAdapter(adapter);
 

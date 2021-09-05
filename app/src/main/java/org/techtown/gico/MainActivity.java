@@ -3,10 +3,7 @@ package org.techtown.gico;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -28,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         abar = getSupportActionBar();
         abar.setTitle("도리얼싫어"); // 향후 수정 필요
-        study = new Template_study();
-        problems = new Template_problems();
-        settings = new Template_settings();
+        study = new StudyFragment();
+        problems = new ProblemsFragment();
+        settings = new SettingsFragment();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,study).commit();
         bottomNavigation = findViewById(R.id.bottom_navigation);
