@@ -12,12 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.techtown.gico.OnSmallUnitItemClickListener;
-import org.techtown.gico.OnUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
-import org.techtown.gico.Unit;
-import org.techtown.gico.UnitAdapter;
 import org.techtown.gico.study.unit1.FragmentContent1;
 import org.techtown.gico.study.unit1.FragmentContent2;
 import org.techtown.gico.study.unit1.FragmentContent3;

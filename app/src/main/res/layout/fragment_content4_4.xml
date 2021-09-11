@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton4_4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="  이제 디렉토리 안의 파일들을 다루는 명령어에 대해 학습해봅시다. vi 명령어를 사용하면 원하는 파일을 생성할 수 있습니다. 사용 방법은 vi 뒤에 파일명.확장자명 식으로 써주면 됩니다. 이미 이러한 이름을 가진 파일이 있다면 그 파일을 열고, 없을 경우 새로운 파일을 생성하고 열립니다. 연습삼아 vi coding.c 를 입력하여 coding.c 라는 파일을 만들어봅시다. 파일이 열리면 다음과 같은 창이 화면에 표시될 것입니다.  \n" />
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  이 상태에서는 파일을 수정할 수 없습니다. 키보드의 a버튼을 입력하면 왼쪽 아래에 INSERT표시가 뜨며, 이 상태가 되어야 파일을 수정할 수 있습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  파일을 다 수정하고 나면 esc 키를 입력해야 합니다. esc를 입력하면 파일이 열렸던 상태로 되돌아갑니다. 여기서는 간단하게 Hello world!를 출력하는 코드를 작성해 보았습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  이 상태에서 : (콜론)을 입력하면 파일을 저장하거나 닫을 수 있습니다. 콜론 뒤에 w를 쓰면 저장이 되며, q를 쓰면 파일을 닫을 수 있습니다. q를 쓰기 위해선 파일이 저장되어 있어야 하며, 파일을 강제로 닫고 싶다면 q!을 사용하면 됩니다. wq를 입력하면 파일이 저장된 뒤 종료됩니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  cat과 more 명령어는 파일에 저장된 내용을 출력해주는 명령어입니다. 사용방법은 cat이나 more 뒤에 출력하고 싶은 파일명을 입력하면 됩니다. 이를 이용하여 위에서 만든 coding.c의 내용을 출력하여 보겠습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  파일의 삭제는 rm 명령어를 사용합니다. 사용방법은 마찬가지로 rm 뒤에 삭제할 파일 이름을 적어주면 됩니다. 이때 *을 사용하면 여러 파일의 삭제를 편리하게 진행할 수 있습니다. rm *은 디렉토리 내의 모든 정보를 삭제하는 명령어이며, rm *.c와 같이 rm *.확장자의 형식으로 사용하면 해당하는 확장자 형식의 파일을 모두 삭제합니다. 파일 이름을 입력할 때도 tab 키를 사용하여 자동완성 기능을 사용할 수 있습니다. 사용 예시는 다음과 같습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  마지막으로 리눅스에서 컴파일을 하는 방법에 대해서 배워보겠습니다. c 파일을 컴파일할 때는 gcc 명령어를 사용합니다. 형식은 gcc 파일명.c –o 실행파일명 과 같이 사용하며, 실행파일명은 아무렇게나 적어도 되지만 보통 .o, .out, .exe 등의 확장자를 사용합니다. 위에서 만든 coding.c 파일을 다시 만들어 실행시켜보도록 하겠습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/linux9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n  위에 보이는 것과 같이 실행파일은 연두색으로 표시됩니다. 실행시킨 결과 Hello world!가 잘 출력되는 것을 확인할 수 있습니다."/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton4_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton4_4"
+        android:layout_toLeftOf="@+id/forwardButton4_4"
+        android:layout_toEndOf="@+id/backButton4_4"
+        android:layout_toRightOf="@+id/backButton4_4"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton4_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton4_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>
