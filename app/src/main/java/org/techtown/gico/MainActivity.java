@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         abar = getSupportActionBar();
-        abar.setTitle("도리얼싫어"); // 향후 수정 필요
+        abar.setTitle("첨단 코딩");
         study = new StudyFragment();
         problems = new ProblemsFragment();
         settings = new SettingsFragment();
