@@ -4,20 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
     tools:context=".study.unit1.FragmentContent3">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/appmenu1" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,10 +23,12 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/edge">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,13 +42,14 @@
 
  사실, 컴퓨터과학에서는 재귀함수로 풀 수 있는 문제는 모두 반복문으로 풀 수 있다는 사실이 잘 알려져 있습니다. 앞선 피보나치 수열 문제를 반복문으로 풀어 볼까요?\n
 " />
+
             <ImageView
-                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
                 android:src="@drawable/recur31" />
 
             <ImageView
@@ -79,7 +72,7 @@
  재귀함수가 반복문에 비해 이렇게 많은 단점을 가지고 있다면, 왜 재귀함수를 사용할까요? 일부 문제의 경우 재귀함수를 사용하는 것이 반복문을 사용하는 것에 비해 문제의 본질을 더 잘 나타내어 주는 경우가 있습니다. 이런 경우 재귀함수를 사용한 코드가 반복문을 사용한 코드보다 훨씬 짧고, 예쁘고, 알아보기 쉬워집니다. 지금은 잘 와 닿지 않을 수 있겠지만, 나중에 정렬에 대해서 배울 때 merge sort 구문을 살펴보면 재귀함수를 이용한 코드가 훨씬 더 직관적임을 보게 될 것입니다.\n
 \n
  [1] 이러한 상황을 가리켜, 우리의 fibonacci 알고리즘의 시간복잡도는 O(1.6^n)보다 크다고 표현합니다. 시간복잡도에 대해서는 알고리즘 개론 시간에 배워 보도록 합시다.\n
- [2] 이 문제를 해결하기 위해 컴퓨터과학자들은 Memoization이라는 기법을 생각해 냈는데요, 이 기법에 대해서도 알고리즘 개론 시간에 배워 보도록 합시다.\n"/>
+ [2] 이 문제를 해결하기 위해 컴퓨터과학자들은 Memoization이라는 기법을 생각해 냈는데요, 이 기법에 대해서도 알고리즘 개론 시간에 배워 보도록 합시다.\n" />
         </LinearLayout>
     </ScrollView>
 
