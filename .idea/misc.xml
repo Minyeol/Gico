@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/edge.xml" value="0.2640625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1753114422174323" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.17527173913043478" />
+        <entry key="app/src/main/res/layout/fragment_content4_1.xml" value="0.16599754342332215" />
+        <entry key="app/src/main/res/layout/fragment_content4_2.xml" value="0.17124807075801762" />
+        <entry key="app/src/main/res/layout/fragment_content4_5.xml" value="0.206620967014023" />
+        <entry key="app/src/main/res/layout/fragment_content6_1.xml" value="0.2958359229334991" />
+        <entry key="app/src/main/res/layout/fragment_content6_2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_content6_3.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_content6_4.xml" value="0.35138678137947144" />
+        <entry key="app/src/main/res/layout/fragment_study_unit4.xml" value="0.17527173913043478" />
+        <entry key="app/src/main/res/layout/fragment_study_unit6.xml" value="0.17527173913043478" />
+        <entry key="app/src/main/res/layout/hyegeun_test.xml" value="0.17980072463768115" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

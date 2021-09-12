@@ -1,4 +1,4 @@
-package org.techtown.gico.study.unit4;
+package org.techtown.gico.study.unit6;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,20 @@ import androidx.fragment.app.FragmentTransaction;
 import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
 
-public class FragmentContent4_1 extends Fragment {
+public class FragmentContent6_1 extends Fragment {
 
-    ImageButton homeButton4_1, forwardButton4_1;
+    ImageButton homeButton6_1, forwardButton6_1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content4_1, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content6_1, container, false);
 
-        homeButton4_1 = rootView.findViewById(R.id.homeButton6_1);
-        forwardButton4_1 = rootView.findViewById(R.id.forwardButton6_1);
+        homeButton6_1 = rootView.findViewById(R.id.homeButton6_1);
+        forwardButton6_1 = rootView.findViewById(R.id.forwardButton6_1);
 
-        homeButton4_1.setOnClickListener(new View.OnClickListener() {
+        homeButton6_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 홈 화면으로 전환
@@ -36,14 +36,14 @@ public class FragmentContent4_1 extends Fragment {
             }
         });
 
-        forwardButton4_1.setOnClickListener(new View.OnClickListener() {
+        forwardButton6_1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // 1-2단원 페이지로 전환(content1)
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent4_2 fragmentContent4_2 = new FragmentContent4_2();
-                transaction.replace(R.id.container, fragmentContent4_2);
+                FragmentContent6_2 fragmentContent6_2 = new FragmentContent6_2();
+                transaction.replace(R.id.container, fragmentContent6_2);
                 transaction.commit();
             }
         });
