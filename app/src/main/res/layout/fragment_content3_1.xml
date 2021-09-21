@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeButton3_1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView311"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:padding="5dp"
+                android:text="  “GIST가 최고야!”를 100번 출력해야 한다고 합시다. 한 가지 방법은 다음과 같이 일일이 입력하여 주는 것입니다.\n\n
+printf(“GIST가 최고야!”);\n
+printf(“GIST가 최고야!”);\n
+...\n
+printf(“GIST가 최고야!”);\n\n
+   이는 매우 비효율적으로 보입니다. 이러한 방식으로 코딩을 하면 코딩 시간이 매우 길어지며, 코드가 길어져 코드를 이해하는데도 어려움이 생길 것입니다. 이러한 상황에 사용할 수 있는 것이 반복문입니다.\n\n
+   반복문이란 특정 조건이 만족되는 한, 컴퓨터가 같은 동작을 반복하도록 하는 코드입니다. 특정 조건이란 반복문이 종료되기 위한 조건입니다. 위의 예시를 들자면, “GIST가 최고야!”를 “100번”출력하는 것이 반복문이 종료되는 조건이 될 것입니다. 만약 이러한 조건이 없다면 반복문은 종료되지 않고, 같은 동작을 무한히 반복하게 될 것입니다. 이러한 경우를 “무한 루프에 빠졌다.”라고 표현합니다.\n\n
+   다음 절 부터는 이러한 반복문을 어떻게 사용하는지에 대해서 알아보겠습니다." />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton3_1"
+        android:layout_toLeftOf="@+id/forwardButton3_1"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+</RelativeLayout>

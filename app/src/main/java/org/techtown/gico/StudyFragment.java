@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
+import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
 import org.techtown.gico.study.FragmentStudyUnit6;
 
@@ -50,6 +51,13 @@ public class StudyFragment extends Fragment {
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit1 fragmentStudyUnit1 = new FragmentStudyUnit1();
                     transaction.replace(R.id.container, fragmentStudyUnit1);
+                    transaction.commit();
+                }
+                if (position == 2) {
+                    // 3단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit3 fragmentStudyUnit3 = new FragmentStudyUnit3();
+                    transaction.replace(R.id.container, fragmentStudyUnit3);
                     transaction.commit();
                 }
                 if (position == 3) {
