@@ -1,4 +1,4 @@
-package org.techtown.gico.study;
+package org.techtown.gico.problems;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,10 +12,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.OnSmallUnitItemClickListener;
+import org.techtown.gico.ProblemsFragment;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
 import org.techtown.gico.StudyFragment;
+import org.techtown.gico.problems.unit3.FragmentProblemsContent3_1;
+import org.techtown.gico.problems.unit3.FragmentProblemsContent3_2;
 import org.techtown.gico.study.unit3.FragmentContent3_1;
 import org.techtown.gico.study.unit3.FragmentContent3_2;
 import org.techtown.gico.study.unit3.FragmentContent3_3;
@@ -23,30 +26,23 @@ import org.techtown.gico.study.unit3.FragmentContent3_4;
 import org.techtown.gico.study.unit3.FragmentContent3_5;
 import org.techtown.gico.study.unit3.FragmentContent3_6;
 import org.techtown.gico.study.unit3.FragmentContent3_7;
-import org.techtown.gico.study.unit4.FragmentContent4_4;
-import org.techtown.gico.study.unit4.FragmentContent4_5;
-import org.techtown.gico.study.unit4.FragmentContent4_6;
-import org.techtown.gico.study.unit6.FragmentContent6_1;
-import org.techtown.gico.study.unit6.FragmentContent6_2;
-import org.techtown.gico.study.unit6.FragmentContent6_3;
-import org.techtown.gico.study.unit6.FragmentContent6_4;
 
-public class FragmentStudyUnit3 extends Fragment {
+public class FragmentProblemsUnit3 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ImageButton homeButton4;
 
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit3, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_problems_unit3, container, false);
 
         homeButton4 = rootView.findViewById(R.id.homeButton3);
         homeButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                StudyFragment studyFragment = new StudyFragment();
-                transaction.replace(R.id.container, studyFragment);
+                ProblemsFragment problemsFragment = new ProblemsFragment();
+                transaction.replace(R.id.container, problemsFragment);
                 transaction.commit();
             }
         });
@@ -56,13 +52,8 @@ public class FragmentStudyUnit3 extends Fragment {
         smallRecyclerView1.setLayoutManager(layoutManager);
         SmallUnitAdapter adapter = new SmallUnitAdapter();
 
-        adapter.addItem(new SmallUnit("3-1.", "반복문이란?"));
-        adapter.addItem(new SmallUnit("3-2.", "for문"));
-        adapter.addItem(new SmallUnit("3-3.", "while문"));
-        adapter.addItem(new SmallUnit("3-4.", "do while문"));
-        adapter.addItem(new SmallUnit("3-5.", "continue와 break"));
-        adapter.addItem(new SmallUnit("3-6.", "중첩 반복문"));
-        adapter.addItem(new SmallUnit("3-7.", "참고사항"));
+        adapter.addItem(new SmallUnit("3-1.", "a 부터 b까지 출력하기"));
+        adapter.addItem(new SmallUnit("3-2.", "사각형 출력하기 3"));
 
         smallRecyclerView1.setAdapter(adapter);
 
@@ -73,17 +64,18 @@ public class FragmentStudyUnit3 extends Fragment {
                 if (position == 0) {
                     // 3-1단원 페이지로 전환(content4_1)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                    FragmentContent3_1 fragmentContent3_1 = new FragmentContent3_1();
-                    transaction.replace(R.id.container, fragmentContent3_1);
+                    FragmentProblemsContent3_1 fragmentProblemsContent3_1 = new FragmentProblemsContent3_1();
+                    transaction.replace(R.id.container, fragmentProblemsContent3_1);
                     transaction.commit();
                 }
                 else if (position == 1) {
                     // 3-2단원 페이지로 전환(content4_2)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                    FragmentContent3_2 fragmentContent3_2 = new FragmentContent3_2();
-                    transaction.replace(R.id.container, fragmentContent3_2);
+                    FragmentProblemsContent3_2 fragmentProblemsContent3_2 = new FragmentProblemsContent3_2();
+                    transaction.replace(R.id.container, fragmentProblemsContent3_2);
                     transaction.commit();
                 }
+                /*
                 else if (position == 2) {
                     // 3-3단원 페이지로 전환(content4_3)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -119,7 +111,7 @@ public class FragmentStudyUnit3 extends Fragment {
                     transaction.replace(R.id.container, fragmentContent3_7);
                     transaction.commit();
                 }
-
+*/
             }
         });
 
