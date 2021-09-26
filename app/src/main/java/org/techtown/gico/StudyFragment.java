@@ -32,14 +32,14 @@ public class StudyFragment extends Fragment {
         adapter.addItem(new Unit("2. 조건문", R.drawable.condition_icon));
         adapter.addItem(new Unit("3. 반복문", R.drawable.loop_icon));
         adapter.addItem(new Unit("4. 리눅스", R.drawable.linux_icon));
-        adapter.addItem(new Unit("5. 함수"));
+        adapter.addItem(new Unit("5. 함수", R.drawable.function_icon));
         adapter.addItem(new Unit("6. 재귀함수"));
         adapter.addItem(new Unit("7. 포인터", R.drawable.pointer_icon));
-        adapter.addItem(new Unit("8. 배열"));
+        adapter.addItem(new Unit("8. 배열", R.drawable.array_icon));
         adapter.addItem(new Unit("9. 구조체", R.drawable.struct_icon));
-        adapter.addItem(new Unit("10. 파일입출력"));
-        adapter.addItem(new Unit("11. 정렬"));
-        adapter.addItem(new Unit("12. 랜덤"));
+        adapter.addItem(new Unit("10. 파일입출력", R.drawable.fileio_icon));
+        adapter.addItem(new Unit("11. 정렬", R.drawable.sort_icon));
+        adapter.addItem(new Unit("12. 랜덤", R.drawable.random_icon));
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(new OnUnitItemClickListener() {
