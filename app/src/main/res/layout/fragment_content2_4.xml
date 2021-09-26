@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit2.FragmentContent2_4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeButton2_4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="31dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="  리눅스란 대형 기종에서만 작동하던 운영체계인 유닉스를 개인용 컴퓨터에서도 작동할 수 있도록 개발한 공개 운영체제입니다. 핀란드 헬싱키대학에 재학중이던 리누스 토르발즈가 1989년에 개발한 것을 1991년에 공개하면서 보급되었습니다. 소스코드가 완전히 공개되어 있어 많은 개발자들이 직접 개발에 참여하고 있으며, 이들에 의해 지속적인 업데이트가 이루어지고 있습니다. 리눅스는 무료이면서 어떤 플랫폼에서도 사용이 가능하다는 장점이 있어 수요가 증가하고 있습니다.\n 개인 컴퓨터에서 리눅스 서버에 접근하기 위해서는 원격 SSH 프로그램이 필요하며, 그 중 하나인 Xshell에 대해 소개하겠습니다. Xshell은 넷사랑컴퓨터에서 판매하는 원격 SSH 프로그램으로 개인 및 학생은 무료로 사용할 수 있습니다. 또한, 리눅스 서버와 개인 컴퓨터 사이에서 파일을 쉽게 주고받기 위해선 ftp 프로그램이 필요하며, 그 중 하나인 Xftp에 대해 소개하겠습니다. Xftp는 넷사랑컴퓨터에서 판매하는 ftp 프로그램으로 역시 개인 및 학생은 무료로 사용할 수 있습니다. 다운로드 링크는 다음과 같습니다.\n\nhttps://www.netsarang.com/ko/free-for-home-school \n\n 리눅스 서버에 접근하기 위해선 사용자 이름과 암호를 입력하여야 하는데, 이에 대해서는 학교 수업에서 안내하는 대로 진행하길 바랍니다." />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton2_4"
+        android:layout_toLeftOf="@+id/forwardButton2_4"
+        android:layout_toEndOf="@+id/backButton2_4"
+        android:layout_toRightOf="@+id/backButton2_4"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

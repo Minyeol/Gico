@@ -3,19 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content1.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2.xml" value="0.2234375" />
-        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2_1.xml" value="0.2234375" />
-        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_1.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2_1.xml" value="0.24458380843785632" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2_2.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2_3.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2_4.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content2_5.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_1.xml" value="0.530940594059406" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_2.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_3.xml" value="0.8" />
-        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_5.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_4.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_5.xml" value="0.4" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content4_6.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content6_1.xml" value="0.2234375" />
-        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content6_2.xml" value="0.2" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content6_2.xml" value="0.4" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content6_3.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_content6_4.xml" value="0.41690962099125367" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_settings.xml" value="0.2234375" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_study_unit1.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_study_unit2.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_study_unit4.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/fragment_study_unit6.xml" value="0.2234375" />
         <entry key="..\:/Users/x/AndroidStudioProjects/Gico2/app/src/main/res/layout/template_small_unit.xml" value="0.21979166666666666" />
         <entry key="app/src/main/res/drawable/edge.xml" value="0.2640625" />
