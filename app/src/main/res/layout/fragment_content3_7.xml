@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton3_7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="a. for, while의 둥근 괄호 뒤에 세미콜론을 쓰면 중괄호 부분이 없는 반복문이 됩니다. 따라서 오류가 발생하므로 이렇게 쓰지 않도록 주의해야 합니다.\n\n
+b. if문과 마찬가지로 반복할 코드가 한 줄이라면 중괄호를 생략할 수 있습니다.\n\n
+c. for문에는 초기식, 조건식, 변화식 등을 쓰지 않을 수도 있습니다. 이러한 경우 세미콜론만을 사용합니다.\n
+ex) for(;i\u003C100;i++), for(;;)\n\n
+d. for문에서 초기식, 조건식, 변화식 사이에 세미콜론 대신 콤마를 적으면 컴파일 에러가 발생하니 주의가 필요합니다.\n\n
+e. for문의 변화식에는 여러 문장을 입력할 수 있습니다. 이러한 경우 콤마로 구분합니다.\n
+ex) for(int i=0;i\u003C10;i++,printf(“1\u005Cn”));" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton3_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/backButton3_7"
+        android:layout_toRightOf="@+id/backButton3_7"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/backButton3_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

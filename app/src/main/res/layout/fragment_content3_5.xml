@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton3_5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="  continue와 break는 반복문 안에서 특이한 기능들을 수행합니다. 반복문 내에서 continue가 실행되면, 그 뒤의 반복 문장은 실행하지 않고, 다음 반복을 실행합니다. 따라서 중요한 조건을 만족하지 않는 경우에는 다음으로 넘어가고 싶다면 continue를 사용하면 좋습니다. continue문을 사용한 예시 코드 하나를 보겠습니다. 다음 코드는 1부터 10까지 숫자를 하나씩 증가시키면서 짝수일 때만 그 수를 출력하는 코드입니다.\n" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/loop51" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/loop52" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="\n  for문 안을 보면 먼저 i를 2로 나눈 나머지가 1인지를 확인합니다. 이것이 참이라면 i는 홀수라는 뜻이므로 고려의 대상이 아닙니다. 때문에 이러한 경우에 continue를 사용하여 그 아래 코드를 사용하지 않고, 다음으로 넘어갑니다. i를 나눈 나머지가 1이 아니라면, i는 짝수이므로 그 i를 출력합니다. 이처럼 continue를 사용하면 편리하게 코드를 작성할 수 있습니다. while문에서도 continue를 사용할 수 있지만, while문에서는 변화식이 실행되지 않은 채로 continue가 실행되어 무한 루프에 빠질 수 있으므로 주의해야 합니다.\n\n
+  반복문 내에서 break가 실행되면, 그 반복문을 아예 종료합니다. 따라서 반복문에 새로운 종료조건을 주고 싶을 때 break를 사용하면 좋습니다. break를 사용하는 예시 코드를 하나 들어보겠습니다. 아래 코드는 1부터 9까지를 출력하는 코드입니다.\n" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/loop53" />
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/loop54" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="\n  위 코드에는 이상한 부분이 있습니다. 바로 while(1)이라는 부분인데요, 조건문 대신 1이라고 써둔 것을 볼 수 있습니다. C언어에서는 0을 거짓으로, 0 이외의 수를 모두 참으로 인식하기 때문에 이렇게 쓰는 것이 가능하며, while(1)은 항상 참이므로 무한루프로 동작하게 됩니다. 이렇게 써도 문제가 되지 않는 이유는 바로 break 때문이며, 이것이 탈출조건으로 작동하기 때문에 무한 루프가 걸리지 않습니다. 하지만, i++ 대신 i+=2와 같은 식으로 작성하여 break문을 포함한 if문이 실행되지 않게 된다면 바로 무한루프로 빠지므로 while(1)과 같은 코드를 사용할 때는 항상 각별한 주의를 들여야 합니다." />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton3_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton3_5"
+        android:layout_toLeftOf="@+id/forwardButton3_5"
+        android:layout_toEndOf="@+id/backButton3_5"
+        android:layout_toRightOf="@+id/backButton3_5"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton3_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton3_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
+import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
 import org.techtown.gico.study.FragmentStudyUnit6;
 
@@ -29,7 +30,7 @@ public class StudyFragment extends Fragment {
 
         adapter.addItem(new Unit("1. 기본 입출력"));
         adapter.addItem(new Unit("2. 조건문"));
-        adapter.addItem(new Unit("3. 반복문"));
+        adapter.addItem(new Unit("3. 반복문", R.drawable.loop_icon));
         adapter.addItem(new Unit("4. 리눅스", R.drawable.linux_icon));
         adapter.addItem(new Unit("5. 함수"));
         adapter.addItem(new Unit("6. 재귀함수"));
@@ -50,6 +51,13 @@ public class StudyFragment extends Fragment {
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit1 fragmentStudyUnit1 = new FragmentStudyUnit1();
                     transaction.replace(R.id.container, fragmentStudyUnit1);
+                    transaction.commit();
+                }
+                if (position == 2) {
+                    // 3단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit3 fragmentStudyUnit3 = new FragmentStudyUnit3();
+                    transaction.replace(R.id.container, fragmentStudyUnit3);
                     transaction.commit();
                 }
                 if (position == 3) {
