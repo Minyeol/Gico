@@ -28,8 +28,13 @@ public class StudyFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         UnitAdapter adapter = new UnitAdapter();
 
+<<<<<<< Updated upstream
         adapter.addItem(new Unit("1. 기본 입출력", R.drawable.input_output_icon));
         adapter.addItem(new Unit("2. 조건문"));
+=======
+        adapter.addItem(new Unit("1. 기본 입출력"));
+        adapter.addItem(new Unit("2. 조건문", R.drawable.condition_icon));
+>>>>>>> Stashed changes
         adapter.addItem(new Unit("3. 반복문", R.drawable.loop_icon));
         adapter.addItem(new Unit("4. 리눅스", R.drawable.linux_icon));
         adapter.addItem(new Unit("5. 함수"));
