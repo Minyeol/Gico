@@ -33,7 +33,7 @@ public class StudyFragment extends Fragment {
         adapter.addItem(new Unit("3. 반복문", R.drawable.loop_icon));
         adapter.addItem(new Unit("4. 리눅스", R.drawable.linux_icon));
         adapter.addItem(new Unit("5. 함수", R.drawable.function_icon));
-        adapter.addItem(new Unit("6. 재귀함수"));
+        adapter.addItem(new Unit("6. 재귀함수", R.drawable.recur_icon));
         adapter.addItem(new Unit("7. 포인터", R.drawable.pointer_icon));
         adapter.addItem(new Unit("8. 배열", R.drawable.array_icon));
         adapter.addItem(new Unit("9. 구조체", R.drawable.struct_icon));
