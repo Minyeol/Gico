@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton3_3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="다음으로 while문에 대해 배워보겠습니다. 우선 while문의 구조에 대해 먼저 보도록 하겠습니다.\n\n
+while ( 조건식 ) {\n
+    반복할 코드 및 변화식;\n
+}\n\n
+  이것이 while문의 구조입니다. for문과는 다르게 while문은 둥근 괄호 안에 조건식만이 들어갑니다. 따라서 조건식에 변수를 조작할 것이라면, while문 위에 미리 선언해주어야 합니다. 중괄호 안에는 반복할 코드를 적어주는데, 마찬가지로 변화식을 사용해 주어야 한다면, 이 코드 안에 같이 작성해 주어야 합니다. for문과 다른 점은 이 변화식을 반복할 코드 중앙에 넣을 수 있어 반복하는 중간에 변화를 줄 수 있다는 점이 있습니다. while문의 실행 순서는 조건식, 중괄호 안의 코드, 조건식 순이며, 조건식이 거짓이 될 때까지 작동합니다.\n\n
+  그럼 while문으로 “GIST가 최고야!”를 100번 반복하여 출력하는 코드를 작성해 보겠습니다.\n" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/loop31" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton3_3"
+        android:layout_toLeftOf="@+id/forwardButton3_3"
+        android:layout_toEndOf="@+id/backButton3_3"
+        android:layout_toRightOf="@+id/backButton3_3"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>
