@@ -33,7 +33,6 @@
                 android:id="@+id/textView311"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/edge"
                 android:padding="5dp"
                 android:text="  “GIST가 최고야!”를 100번 출력해야 한다고 합시다. 한 가지 방법은 다음과 같이 일일이 입력하여 주는 것입니다.\n\n
 printf(“GIST가 최고야!\u005Cn”);\n

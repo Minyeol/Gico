@@ -56,8 +56,8 @@ public class FragmentStudyUnit4 extends Fragment {
         SmallUnitAdapter adapter = new SmallUnitAdapter();
 
         adapter.addItem(new SmallUnit("4-1.", "리눅스란?"));
-        adapter.addItem(new SmallUnit("4-2.", "디렉토리 이동 관련 명령어"));
-        adapter.addItem(new SmallUnit("4-3.", "디렉토리 생성 및 삭제 관련 명령어"));
+        adapter.addItem(new SmallUnit("4-2.", "디렉토리 이동"));
+        adapter.addItem(new SmallUnit("4-3.", "디렉토리 생성 및 삭제"));
         adapter.addItem(new SmallUnit("4-4.", "파일 관련 명령어"));
         adapter.addItem(new SmallUnit("4-5.", "참고사항"));
         adapter.addItem(new SmallUnit("4-6", "명령어 정리"));
