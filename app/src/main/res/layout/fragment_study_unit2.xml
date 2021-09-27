@@ -21,8 +21,8 @@
         android:layout_marginTop="127dp"
         android:layout_marginBottom="0dp" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <org.techtown.gico.UnitTemplate
+        android:id="@+id/unitTemplate2"
         android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -31,6 +31,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/chapter7" />
+        android:layout_marginTop="15dp" />
 </RelativeLayout>

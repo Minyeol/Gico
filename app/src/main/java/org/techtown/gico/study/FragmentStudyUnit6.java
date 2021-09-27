@@ -16,6 +16,7 @@ import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
 import org.techtown.gico.StudyFragment;
+import org.techtown.gico.UnitTemplate;
 import org.techtown.gico.study.unit4.FragmentContent4_1;
 import org.techtown.gico.study.unit4.FragmentContent4_2;
 import org.techtown.gico.study.unit4.FragmentContent4_3;
@@ -33,9 +34,11 @@ public class FragmentStudyUnit6 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ImageButton homeButton4;
-
+        UnitTemplate unitTemplate;
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit6, container, false);
-
+        unitTemplate = rootView.findViewById(R.id.unitTemplate6);
+        unitTemplate.setImage(R.drawable.recur_icon);
+        unitTemplate.setUnit("6. 재귀함수");
         homeButton4 = rootView.findViewById(R.id.homeButton4);
         homeButton4.setOnClickListener(new View.OnClickListener() {
             @Override
