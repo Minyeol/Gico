@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton12_2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="  우선 rand 함수와 srand 함수에 대해 배워보겠습니다. 이 두 함수는 stdlib.h라는 헤더파일에 들어있으므로, 이들을 사용하기 위해선 #include\u003Cstdio.h\u003E 밑줄에 #include\u003Cstdlib.h\u003E를 추가해주어야 합니다.\n\n
+  rand함수는 랜덤한 숫자를 정수형으로 반환하며, 그 범위는 0부터 RAND_MAX까지입니다. RAND_MAX는 stdlib.h 헤더파일에서 32767이라는 값으로 정해진 상수입니다. 따라서 rand함수는 0부터 32767 사이의 정수를 랜덤하게 추출한다고 할 수 있습니다. 사용 예시는 다음과 같습니다.\n" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random1" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="\n  그런데 이 코드를 누가, 언제 어디서 돌리든 같은 값이 출력됩니다. 이는 c언어가 랜덤한 함수를 직접 생성하는 것이 아닌, 미리 정해져 있는 숫자들을 직접 사용하기 때문에 발생하는 현상입니다. 물론 이 숫자들은 랜덤하게 형성되어있긴 하지만, 매번 같은 숫자가 사용된다면 이를 이용하여 임의로 당첨확률을 조작할 수도 있을 것입니다. 이러한 문제점을 막기 위해서 srand 함수를 사용하는 것입니다.\n\n
+  srand함수는 난수의 seed 값을 정해주는 함수입니다. seed는 난수를 초기화해주는 숫자로 이해하면 됩니다. srand를 사용하지 않은 경우엔 기본 seed로 1이 사용됩니다. srand함수를 사용하기 위해선 srand에 정수 하나를 인자로 입력해 주면 됩니다. 사용 예시는 다음과 같습니다.\n " />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random3" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random4" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random5" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random6" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random7" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/random8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="5dp"
+                android:text="\n  이처럼 seed값이 조금만 달라도 결과가 완전히 달라지는 것을 확인할 수 있으며, seed를 1로 설정할 경우 srand함수를 사용하지 않았을 때와 같은 것을 확인할 수 있습니다. 하지만, seed가 같으면 출력되는 값이 같으므로 여전히 랜덤 난수로서의 기능은 제대로 하지 못하고 있습니다. 이러한 문제를 해결하기 위해선 실행할 때마다 seed의 값이 달라지도록 설계해야 하는데 어떻게 하면 이렇게 만들 수 있을까요? 이에 대해선 다음 단원에서 배워보도록 하겠습니다." />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton12_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton12_2"
+        android:layout_toLeftOf="@+id/forwardButton12_2"
+        android:layout_toEndOf="@+id/backButton12_2"
+        android:layout_toRightOf="@+id/backButton12_2"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton12_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton12_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>
