@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit2.FragmentContent2_5">
+    tools:context=".study.unit8.FragmentContent8_1">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/homeButton2_5"
+        android:layout_above="@+id/homeButton8_1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -28,44 +28,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                android:text="" />
-
-            <ImageView
-                android:adjustViewBounds="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional9" />
         </LinearLayout>
+
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton2_5"
+        android:id="@+id/homeButton8_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton2_5"
-        android:layout_toLeftOf="@+id/forwardButton2_5"
-        android:layout_toEndOf="@+id/backButton2_5"
-        android:layout_toRightOf="@+id/backButton2_5"
+        android:layout_toStartOf="@+id/forwardButton8_1"
+        android:layout_toLeftOf="@+id/forwardButton8_1"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton2_5"
+        android:id="@+id/forwardButton8_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -75,17 +59,4 @@
         android:layout_marginRight="70dp"
         android:layout_marginBottom="30dp"
         android:src="@drawable/forward_button" />
-
-    <ImageButton
-        android:id="@+id/backButton2_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="69dp"
-        android:layout_marginLeft="69dp"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/back_button" />
-
 </RelativeLayout>
