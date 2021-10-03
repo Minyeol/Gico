@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
+import org.techtown.gico.study.FragmentStudyUnit12;
 import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
 import org.techtown.gico.study.FragmentStudyUnit6;
@@ -72,6 +73,13 @@ public class StudyFragment extends Fragment {
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit6 fragmentStudyUnit6 = new FragmentStudyUnit6();
                     transaction.replace(R.id.container, fragmentStudyUnit6);
+                    transaction.commit();
+                }
+                if (position == 11){
+                    // 12단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit12 fragmentStudyUnit12 = new FragmentStudyUnit12();
+                    transaction.replace(R.id.container, fragmentStudyUnit12);
                     transaction.commit();
                 }
                 else {

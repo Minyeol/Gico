@@ -17,6 +17,7 @@ import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
 import org.techtown.gico.StudyFragment;
+import org.techtown.gico.UnitTemplate;
 import org.techtown.gico.study.unit1.FragmentContent1;
 import org.techtown.gico.study.unit1.FragmentContent2;
 import org.techtown.gico.study.unit1.FragmentContent3;
@@ -33,9 +34,11 @@ public class FragmentStudyUnit4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ImageButton homeButton4;
-
+        UnitTemplate unitTemplate;
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit4, container, false);
-
+        unitTemplate = rootView.findViewById(R.id.unitTemplate4);
+        unitTemplate.setUnit("4. 리눅스");
+        unitTemplate.setImage(R.drawable.linux_icon);
         homeButton4 = rootView.findViewById(R.id.homeButton4);
         homeButton4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +56,8 @@ public class FragmentStudyUnit4 extends Fragment {
         SmallUnitAdapter adapter = new SmallUnitAdapter();
 
         adapter.addItem(new SmallUnit("4-1.", "리눅스란?"));
-        adapter.addItem(new SmallUnit("4-2.", "디렉토리 이동 관련 명령어"));
-        adapter.addItem(new SmallUnit("4-3.", "디렉토리 생성 및 삭제 관련 명령어"));
+        adapter.addItem(new SmallUnit("4-2.", "디렉토리 이동"));
+        adapter.addItem(new SmallUnit("4-3.", "디렉토리 생성 및 삭제"));
         adapter.addItem(new SmallUnit("4-4.", "파일 관련 명령어"));
         adapter.addItem(new SmallUnit("4-5.", "참고사항"));
         adapter.addItem(new SmallUnit("4-6", "명령어 정리"));

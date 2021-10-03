@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@drawable/edge"
         android:layout_above="@+id/homeButton4_3"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -31,6 +31,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
+                android:padding="5dp"
                 android:text="  다음으로는 디렉토리 생성 및 삭제에 관한 명령어들을 알아볼 것입니다. 그 전에 실행 창이 지저분하니 clear 명령어를 입력하여 줍시다. clear 명령어는 기존에 입력한 명령어들이 더 이상 보이지 않도록 해줍니다. 디렉토리를 생성할 때는 mkdir이라는 명령어를 사용합니다. mkdir 뒤에 원하는 디렉토리 이름을 입력하면, 그 이름을 가진 디렉토리가 생성됩니다. 디렉토리를 삭제할 때는 rmdir 명령어를 사용합니다. rmdir 명령어 뒤에 삭제할 디렉토리 이름을 입력하면 해당 디렉토리를 삭제할 수 있습니다. 참고로 디렉토리이름 입력 중 tab키를 누르면 자동완성 기능을 사용할 수 있습니다. 단, 디렉토리 안에 정보가 들어있다면 rmdir 명령어로는 삭제할 수 없습니다. 만약 정보가 포함된 디렉토리를 삭제하고 싶다면 rm –r명령어를 사용하면 됩니다. 그러나 정보가 있는 디렉토리를 삭제할 수 있는 만큼 rm –r 명령어는 사용시에 유용한 자료가 삭제되지 않도록 주의해야 합니다. 사용 예시는 다음과 같습니다. \n" />
 
             <ImageView
@@ -40,6 +41,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
+                android:padding="5dp"
                 android:src="@drawable/linux2" />
             <TextView
                 android:layout_width="match_parent"
@@ -47,6 +49,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
+                android:padding="5dp"
                 android:text="\n  먼저 ls 명령어를 이용하여 현재 디렉토리에 포함된 정보들을 확인합니다. 이후 mkdir 명령어를 이용하여 code라는 디렉토리를 생성하였으며, ls 명령어를 이용하여 확인하여 보니 이전과 다르게 code라는 디렉토리가 생성된 것을 확인할 수 있습니다. code 디렉토리는 방금 만들어 주었고, 다른 조작을 진행하지 않았으므로 비어있는 디렉토리라는 것을 알 수 있습니다. 때문에 rmdir 명령어를 사용하면 잘 삭제가 될 것을 예상해 볼 수 있으며, 실제로도 rmdir 명령어를 사용하였을 때 잘 삭제가 되었습니다. 다시 mkdir 명령어로 code 디렉토리를 생성한 뒤, 이번에는 code 디렉토리 안에 c와 java라는 디렉토리를 만들어주었습니다. 이제 code 디렉토리는 정보를 담고 있으므로 rmdir 명령어로 삭제가 되지 않을 것이라고 예상해 볼 수 있습니다. 실제로 확인하여 보니 에러 메시지가 뜨면서 삭제가 되지 않은 모습을 확인할 수 있었습니다. 이후 rm –r 명령어를 이용하여 삭제하여 보니 잘 삭제가 된 것을 확인할 수 있었습니다. "/>
         </LinearLayout>
     </ScrollView>

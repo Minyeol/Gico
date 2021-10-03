@@ -20,8 +20,8 @@
         android:layout_marginTop="127dp"
         android:layout_marginBottom="130dp" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <org.techtown.gico.UnitTemplate
+        android:id="@+id/unitTemplate4"
         android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -30,8 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/chapter7" />
+        android:layout_marginTop="15dp" />
 
     <ImageButton
         android:id="@+id/homeButton4"

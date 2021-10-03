@@ -12,7 +12,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/homeButton3_1"
+        android:layout_above="@+id/homeButton12_1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -34,21 +34,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="  “GIST가 최고야!”를 100번 출력해야 한다고 합시다. 한 가지 방법은 다음과 같이 일일이 입력하여 주는 것입니다.\n\n
-printf(“GIST가 최고야!\u005Cn”);\n
-printf(“GIST가 최고야!\u005Cn”);\n
-...\n
-printf(“GIST가 최고야!\u005Cn”);\n\n
-   이는 매우 비효율적으로 보입니다. 이러한 방식으로 코딩을 하면 코딩 시간이 매우 길어지며, 코드가 길어져 코드를 이해하는데도 어려움이 생길 것입니다. 이러한 상황에 사용할 수 있는 것이 반복문입니다.\n\n
-   반복문이란 특정 조건이 만족되는 한, 컴퓨터가 같은 동작을 반복하도록 하는 코드입니다. 특정 조건이란 반복문이 종료되기 위한 조건입니다. 위의 예시를 들자면, “GIST가 최고야!”를 “100번”출력하는 것이 반복문이 종료되는 조건이 될 것입니다. 만약 이러한 조건이 없다면 반복문은 종료되지 않고, 같은 동작을 무한히 반복하게 될 것입니다. 이러한 경우를 “무한 루프에 빠졌다.”라고 표현합니다.\n\n
-   다음 절 부터는 이러한 반복문을 어떻게 사용하는지에 대해서 알아보겠습니다." />
+                android:text="  우리는 살면서 내기나 추첨 등을 종종 진행하곤 합니다. 이런 상황들에서는 특정한 누군가가 이득이나 손해를 보는 일이 없도록 공평하게 처리하는 것이 중요합니다. 이때 사용하는 것이 바로 랜덤 함수입니다. 랜덤 함수는 일정 범위 내에서 숫자를 랜덤하게 추출해 반환하는 함수입니다. c언어에서는 랜덤 함수를 사용하기 위해서 rand 함수, srand 함수, time 함수라는 세 함수들을 조합해서 사용해야 하는데, 그 이유와 사용방법에 대해서 배워보도록 하겠습니다. " />
 
 
         </LinearLayout>
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton3_1"
+        android:id="@+id/homeButton12_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -59,12 +52,12 @@ printf(“GIST가 최고야!\u005Cn”);\n\n
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton3_1"
-        android:layout_toLeftOf="@+id/forwardButton3_1"
+        android:layout_toStartOf="@+id/forwardButton12_1"
+        android:layout_toLeftOf="@+id/forwardButton12_1"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton3_1"
+        android:id="@+id/forwardButton12_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
