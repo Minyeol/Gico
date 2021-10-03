@@ -47,17 +47,6 @@ public class FragmentContent2_4 extends Fragment {
             }
         });
 
-        forwardButton2_4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 다음 화면으로 전환
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent2_4 fragmentContent2_4 = new FragmentContent2_4();
-                transaction.replace(R.id.container, fragmentContent2_4);
-                transaction.commit();
-            }
-        });
-
         return rootView;
     }
 }

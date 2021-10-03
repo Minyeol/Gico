@@ -168,18 +168,6 @@ switch 분기문은 다음과 형식이 균일하며 처리해야 할 조건이 
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton2_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/forward_button" />
-
-    <ImageButton
         android:id="@+id/backButton2_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
