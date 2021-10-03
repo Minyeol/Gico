@@ -12,7 +12,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/homeButton3_3"
+        android:layout_above="@+id/homeButton12_4"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -23,12 +23,10 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/edge">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,28 +34,14 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
                 android:padding="5dp"
-                android:text="  다음으로 while문에 대해 배워보겠습니다. 우선 while문의 구조에 대해 먼저 보도록 하겠습니다.\n\n
-while ( 조건식 ) {\n
-    반복할 코드 및 변화식;\n
-}\n\n
-  이것이 while문의 구조입니다. for문과는 다르게 while문은 둥근 괄호 안에 조건식만이 들어갑니다. 따라서 조건식에 변수를 조작할 것이라면, while문 위에 미리 선언해주어야 합니다. 중괄호 안에는 반복할 코드를 적어주는데, 마찬가지로 변화식을 사용해 주어야 한다면, 이 코드 안에 같이 작성해 주어야 합니다. for문과 다른 점은 이 변화식을 반복할 코드 중앙에 넣을 수 있어 반복하는 중간에 변화를 줄 수 있다는 점이 있습니다. while문의 실행 순서는 조건식, 중괄호 안의 코드, 조건식 순이며, 조건식이 거짓이 될 때까지 작동합니다.\n\n
-  그럼 while문으로 “GIST가 최고야!”를 100번 반복하여 출력하는 코드를 작성해 보겠습니다.\n" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                android:adjustViewBounds="true"
-                android:padding="5dp"
-                android:src="@drawable/loop31" />
+                android:text="  지금까지 배운 랜덤함수는 0부터 32767 사이의 정수를 추출합니다. 하지만, 추첨에 참여한 사람이 10명에 그친다면 11부터 32767까지의 숫자는 필요가 없게 됩니다. 이러한 경우에는 나머지 연산을 활용하면 됩니다. rand() % 10을 하면 0부터 9까지의 정수만이 출력되므로 원하는 결과를 얻을 수 있습니다. 그런데 보통 번호는 1부터 세므로, 약간의 변형이 더 필요합니다. 이 경우에는 rand() % 10 + 1과 같이 그냥 1을 더해주기만 하면 됩니다.\n\n
+  한 가지 경우를 더 살펴보도록 하겠습니다. 이번에는 0부터 1까지의 실수를 추출하려고 합니다. 랜덤함수는 정수를 추출하므로 이 경우 역시 바로 적용할 수는 없는 상황입니다. 이러한 경우에는 RAND_MAX로 나누어서 해결합니다. rand() / RAND_MAX를 하면 rand()의 최솟값은 0이므로, 나눈 최솟값도 0이 되고, rand()의 최댓값은 RAND_MAX이므로 나눈 최댓값은 1이 됩니다. 따라서 원하는 대로 0부터 1까지의 랜덤한 실수를 얻을 수 있습니다. 만약 0부터 10까지의 수를 랜덤하게 얻고 싶다면 RAND_MAX로 나눈 뒤 10을 곱해주면 해결됩니다. 이처럼 랜덤함수를 사용할 때는 주어진 상황에 맞도록 랜덤함수를 변형시켜 활용해야 합니다." />
 
         </LinearLayout>
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton3_3"
+        android:id="@+id/homeButton12_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -66,26 +50,12 @@ while ( 조건식 ) {\n
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton3_3"
-        android:layout_toLeftOf="@+id/forwardButton3_3"
-        android:layout_toEndOf="@+id/backButton3_3"
-        android:layout_toRightOf="@+id/backButton3_3"
+        android:layout_toEndOf="@+id/backButton12_4"
+        android:layout_toRightOf="@+id/backButton12_4"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton3_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/forward_button" />
-
-    <ImageButton
-        android:id="@+id/backButton3_3"
+        android:id="@+id/backButton12_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

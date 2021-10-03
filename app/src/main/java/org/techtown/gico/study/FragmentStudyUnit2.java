@@ -15,6 +15,7 @@ import org.techtown.gico.OnSmallUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
+import org.techtown.gico.UnitTemplate;
 import org.techtown.gico.study.unit1.FragmentContent1;
 import org.techtown.gico.study.unit1.FragmentContent2;
 import org.techtown.gico.study.unit1.FragmentContent3;
@@ -25,9 +26,11 @@ public class FragmentStudyUnit2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit1, container, false);
-
+        UnitTemplate unitTemplate;
         RecyclerView smallRecyclerView1 = rootView.findViewById(R.id.smallRecyclerView1);
-
+        unitTemplate = rootView.findViewById(R.id.unitTemplate2);
+        unitTemplate.setUnit("2. 조건문");
+        unitTemplate.setImage(R.drawable.condition_icon);
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext(), LinearLayoutManager.VERTICAL, false);
         smallRecyclerView1.setLayoutManager(layoutManager);
         SmallUnitAdapter adapter = new SmallUnitAdapter();
