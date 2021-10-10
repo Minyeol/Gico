@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
     tools:context=".study.unit10.FragmentContent10_3">
 
     <ScrollView
@@ -34,7 +35,11 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:text="\n 다음 코드를 비쥬얼 스튜디오에서 실행해보세요.\n" />
+                android:text="\n fputs로 서식 없이 문자열을 그대로 쓰는 방법을 알아보겠습니다.
+\n fputs(버퍼, 파일 포인터);
+\n   int fputs(char const *_Buffer, FILE *_Stream);
+\n   fputs는 성공하면 음수가 아닌 값을 반환하고, 실패하면 EOF(-1)을 반환합니다.
+\n아래 코드는 함수 사용 예시 입니다.\n" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -43,7 +48,55 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/conditional3" />
+                android:src="@drawable/file6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="프로그램을 실행한 뒤 hi.txt 파일을 열어보면 \u02BAGIST hi!\u02BA 문자열이 저장된 것을 볼 수 있습니다." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/file7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 이번에는 fwrite로 서식 없이 문자열을 파일에 써보겠습니다.
+\nfwrite는 다음과 같이 사용합니다.
+\nfwrite(버퍼, 쓰기 크기, 쓰기 횟수, 파일 포인터);**
+\nsize_t fwrite(void const *_Buffer, size_t _ElementSize, size_t _ElementCount, FILE *_Stream);
+\n쓰기를 성공하면 성공한 쓰기 횟수를 반환하고, 쓰기에 실패하면 지정된 쓰기 횟수보다 작은 값을 반환합니다.
+\n\n아래 코드는 함수 사용 예시 입니다.\n" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/file8" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/file9" />
         </LinearLayout>
 
     </ScrollView>

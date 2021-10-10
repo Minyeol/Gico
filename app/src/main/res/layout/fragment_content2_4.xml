@@ -79,7 +79,7 @@ switch 분기문은 다음과 형식이 균일하며 처리해야 할 조건이 
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:text="case 다음에는 반드시 값(리터럴)이 와야 하고 변수나 조건식은 올 수 없습니다. 그리고 case에 값을 지정했으면 **:** (콜론)을 붙여 준 뒤 다음 줄부터 실행할 코드를 입력합니다. 또한, 코드의 마지막에는 break를 입력하여 중괄호를 끝냅니다. 위의 예제 코드를 switch 분기문 대신 if 조건문으로 표현하면 다음과 같은 모양이 됩니다." />
+                android:text="case 다음에는 반드시 값(리터럴)이 와야 하고 변수나 조건식은 올 수 없습니다. 그리고 case에 값을 지정했으면 : (콜론)을 붙여 준 뒤 다음 줄부터 실행할 코드를 입력합니다. 또한, 코드의 마지막에는 break를 입력하여 중괄호를 끝냅니다. 위의 예제 코드를 switch 분기문 대신 if 조건문으로 표현하면 다음과 같은 모양이 됩니다." />
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -161,8 +161,6 @@ switch 분기문은 다음과 형식이 균일하며 처리해야 할 조건이 
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton2_4"
-        android:layout_toLeftOf="@+id/forwardButton2_4"
         android:layout_toEndOf="@+id/backButton2_4"
         android:layout_toRightOf="@+id/backButton2_4"
         android:src="@drawable/home_button" />

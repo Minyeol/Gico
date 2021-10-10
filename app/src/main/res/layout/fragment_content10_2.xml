@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
     tools:context=".study.unit10.FragmentContent10_2">
 
     <ScrollView
@@ -34,7 +35,11 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:text="\n 다음 코드를 비쥬얼 스튜디오에서 실행해보세요.\n"/>
+                android:text="\n 입력 서식을 지정해서 파일의 문자열을 읽는 방법을 알아보겠습니다.  파일을 읽을 때도 fopen 함수로 파일을 열어서 파일 포인터를 얻은 뒤 fscanf 함수로 서식을 지정하여 파일의 내용을 읽습니다(stdio.h 헤더 파일에 선언되어 있습니다).
+\n fscanf(파일 포인터, 서식, 변수의 주소1, 변수의 주소2, …);
+\n  int fscanf(FILE * const _Stream, char const * const _Format, ...);
+\n성공하면 읽어온 값의 개수를 반환, 실패하면 EOF(-1)를 반환
+\n아래 코드는 함수 사용 예시입니다.\n"/>
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -43,7 +48,16 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional3" />
+                android:src="@drawable/file4" />
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/file5" />
         </LinearLayout>
 
     </ScrollView>
