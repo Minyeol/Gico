@@ -14,7 +14,7 @@ import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
 
 public class FragmentContent2_4 extends Fragment {
-    ImageButton backButton2_4, homeButton2_4, forwardButton2_4;
+    ImageButton backButton2_4, homeButton2_4;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -23,7 +23,6 @@ public class FragmentContent2_4 extends Fragment {
 
         backButton2_4 = rootView.findViewById(R.id.backButton2_4);
         homeButton2_4 = rootView.findViewById(R.id.homeButton2_4);
-        forwardButton2_4 = rootView.findViewById(R.id.forwardButton2_4);
 
         backButton2_4.setOnClickListener(new View.OnClickListener() {
             @Override
