@@ -11,8 +11,17 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.techtown.gico.problems.FragmentProblemsUnit1;
+import org.techtown.gico.problems.FragmentProblemsUnit10;
+import org.techtown.gico.problems.FragmentProblemsUnit12;
+import org.techtown.gico.problems.FragmentProblemsUnit2;
 import org.techtown.gico.problems.FragmentProblemsUnit3;
+import org.techtown.gico.problems.FragmentProblemsUnit4;
+import org.techtown.gico.problems.FragmentProblemsUnit5;
 import org.techtown.gico.problems.FragmentProblemsUnit6;
+import org.techtown.gico.problems.FragmentProblemsUnit7;
+import org.techtown.gico.problems.FragmentProblemsUnit8;
+import org.techtown.gico.problems.FragmentProblemsUnit9;
 import org.techtown.gico.study.FragmentStudyUnit1;
 import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
@@ -48,6 +57,21 @@ public class ProblemsFragment extends Fragment {
             @Override
             public void onItemClick(UnitAdapter.ViewHolder holder, View view, int position) {
                 Unit item = adapter.getItem(position);
+                if (position == 0) {
+                    // 1단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit1 fragmentProblemsUnit1 = new FragmentProblemsUnit1();
+                    transaction.replace(R.id.container, fragmentProblemsUnit1);
+                    transaction.commit();
+                }
+                if (position == 1) {
+                    // 2단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit2 fragmentProblemsUnit2 = new FragmentProblemsUnit2();
+                    transaction.replace(R.id.container, fragmentProblemsUnit2);
+                    transaction.commit();
+                }
+
                 if (position == 2) {
                     // 3단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -55,11 +79,60 @@ public class ProblemsFragment extends Fragment {
                     transaction.replace(R.id.container, fragmentProblemsUnit3);
                     transaction.commit();
                 }
+                if (position == 3) {
+                    // 4단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit4 fragmentProblemsUnit4 = new FragmentProblemsUnit4();
+                    transaction.replace(R.id.container, fragmentProblemsUnit4);
+                    transaction.commit();
+                }
+                if (position == 4) {
+                    // 5단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit5 fragmentProblemsUnit5 = new FragmentProblemsUnit5();
+                    transaction.replace(R.id.container, fragmentProblemsUnit5);
+                    transaction.commit();
+                }
                 if (position == 5) {
                     // 6단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentProblemsUnit6 fragmentProblemsUnit6 = new FragmentProblemsUnit6();
                     transaction.replace(R.id.container, fragmentProblemsUnit6);
+                    transaction.commit();
+                }
+                if (position == 6) {
+                    // 7단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit7 fragmentProblemsUnit7 = new FragmentProblemsUnit7();
+                    transaction.replace(R.id.container, fragmentProblemsUnit7);
+                    transaction.commit();
+                }
+                if (position == 7) {
+                    // 8단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit8 fragmentProblemsUnit8 = new FragmentProblemsUnit8();
+                    transaction.replace(R.id.container, fragmentProblemsUnit8);
+                    transaction.commit();
+                }
+                if (position == 8) {
+                    // 9단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit9 fragmentProblemsUnit9 = new FragmentProblemsUnit9();
+                    transaction.replace(R.id.container, fragmentProblemsUnit9);
+                    transaction.commit();
+                }
+                if (position == 9) {
+                    // 10단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit10 fragmentProblemsUnit10 = new FragmentProblemsUnit10();
+                    transaction.replace(R.id.container, fragmentProblemsUnit10);
+                    transaction.commit();
+                }
+                if (position == 11) {
+                    // 12단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit12 fragmentProblemsUnit12 = new FragmentProblemsUnit12();
+                    transaction.replace(R.id.container, fragmentProblemsUnit12);
                     transaction.commit();
                 }
                 else {
