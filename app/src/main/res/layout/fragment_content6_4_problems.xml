@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton4_3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="태보"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView313"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="\n\n    태보는 태권도와 복싱을 합친 우리나라의 운동이다. 민열이는 다이어트를 위해 하루 25분씩 태보에 시간을 투자하려 한다. 민열이의 운동 패턴을 짜 주는 프로그램을 작성하시오.\n\n
+
+ 입력 : 1, 2, 3, 4, 5, 6, 7, 8이 입력으로 주어진다.\n
+ 출력 : 각각의 입력에 대해 다음을 출력해야 한다. 8이 입력으로 주어졌을 때는 어떤 출력이 나올지 직접 유추해야 한다.\n
+ 1 : jab\n
+ 2 : punch jab\n
+ 3 : jab hook punch jab jab\n
+ 4 : punch jab sidekick jab hook punch jab jab punch jab\n
+ 5 : jab hook punch jab jab cross punch jab sidekick jab hook punch jab jab punch jab jab hook punch jab jab\n
+ 6 : punch jab sidekick jab hook punch jab jab punch jab jump jab hook punch jab jab cross punch jab sidekick jab hook punch jab jab punch jab jab hook punch jab jab punch jab sidekick jab hook punch jab jab punch jab\n
+ 7 : jab hook punch jab jab cross punch jab sidekick jab hook punch jab jab punch jab jab hook punch jab jab punch jab sidekick jab hook punch jab jab punch jab jump jab hook punch jab jab cross punch jab sidekick jab hook punch jab jab punch jab jab hook punch jab jab punch jab sidekick jab hook punch jab jab punch jab jab hook punch jab jab cross punch jab sidekick jab hook punch jab jab punch jab jab hook punch jab jab\n
+\n
+ 문제를 만든 사람 : 송혜근\n\n
+"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton4_3"
+        android:layout_toLeftOf="@+id/forwardButton4_3"
+        android:layout_toEndOf="@+id/backButton4_3"
+        android:layout_toRightOf="@+id/backButton4_3"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

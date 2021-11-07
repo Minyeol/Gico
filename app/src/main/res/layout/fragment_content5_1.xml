@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeButton6_1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView611"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:text="    함수(function)를 사용하는 이유는 두 가지입니다. 첫 번째는 프로그램을 모듈화(Modularize)하는 것으로, 모듈화란 원래의 프로그램을 여러 조각으로 나누어 좀 더 다루기 쉽도록 만드는 것입니다(Divide and Conquer). 두 번째는 반복되는 코드들이 있을 때 처음 한 번만 코드를 작성하고 그것을 여러 번 불러 쓰기 위함입니다. C언어에서는 미리 만들어둔 여러 가지 함수들을 제공하고 있는데, 예를 들어 그동안 사용했던 printf, scanf는 모두 C언어의 함수입니다. 우리는 C언어에서 미리 만들어둔 함수를 사용하는 것 말고도 직접 함수를 만들어서 사용할 수도 있는데, 예를 들어 다음의 정사각형 모양의 별을 출력하는 함수 print_square을 보겠습니다.\n
+" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:src="@drawable/func11" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/func14" />
+
+            <TextView
+                android:id="@+id/textView612"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:text="  [그림 5.1]\n\n
+
+ [print_square의 함수 원형(Function Prototype) 만들기]\n\n
+
+ 함수 원형(Function Prototype)의 형태:\n
+ 자료형 함수이름(자료형 매개변수, 자료형 매개변수...);\n
+
+ line 3의 void print_square(unsigned int n);은 함수 원형(Function Prototype / Function Declaration)이라 불립니다. 컴파일러에게 ‘이런 함수가 있다’고 알려주는 역할을 합니다. 컴파일러는 위에서 아래로 코드를 해석하기 때문에 main 안에서 print_square를 사용하려면 main 위에서 print_square라는 함수가 있음을 알려 주어야 합니다.\n
+ 그렇다면 함수 원형 없이도 main에서 print_square를 사용하려면 어떻게 해야 할까요? line 15부터 line 23까지를 main의 위로 올려 주면, 컴파일러는 위에서 아래로 코드를 해석하기 때문에 main 안에서 print_square이 호출되기 전에 이 함수가 정의되었음을 확인할 수 있습니다.\n\n" />
+
+            <ImageView
+                android:id="@+id/imageView513"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:src="@drawable/func13" />
+
+            <TextView
+                android:id="@+id/textView514"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:text=" [그림 5.2] 함수 원형 없이 print_square 사용하기\n\n
+
+ [print_square 호출하기]\n
+ [그림 5.1]의 line 9, 10에서, 함수 이름 안에 unsigned int형 자료를 넣는 것으로 함수를 호출하는 것을 볼 수 있습니다. \n\n
+
+ [print_square 정의하기]\n
+ [그림 5.1]의 line 15-23까지는 print_square을 정의하는 부분입니다. line 15의 괄호 안에 들어 있는 unsigned int 표시를 통해, 이 함수는 변수(parameter)로 unsigned int형 자료 하나를 받는다는 것을 알 수 있습니다. 또한 맨 앞의 void 표시는, 이 함수가 아무것도 리턴하지 않는다는 뜻입니다. 리턴하지 않는다는 뜻이 잘 와 닿지 않을 수도 있는데요, 무언가를 리턴하는 함수의 예시를 나중 챕터에서 살펴보면서 리턴의 뜻을 익히도록 합시다.
+" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton6_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton6_1"
+        android:layout_toLeftOf="@+id/forwardButton6_1"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton6_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+</RelativeLayout>

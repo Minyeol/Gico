@@ -12,9 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
+import org.techtown.gico.study.FragmentStudyUnit11;
 import org.techtown.gico.study.FragmentStudyUnit12;
 import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
+import org.techtown.gico.study.FragmentStudyUnit5;
 import org.techtown.gico.study.FragmentStudyUnit6;
 
 public class StudyFragment extends Fragment {
@@ -68,6 +70,13 @@ public class StudyFragment extends Fragment {
                     transaction.replace(R.id.container, fragmentStudyUnit4);
                     transaction.commit();
                 }
+                if (position == 4) {
+                    // 4단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit5 fragmentStudyUnit5 = new FragmentStudyUnit5();
+                    transaction.replace(R.id.container, fragmentStudyUnit5);
+                    transaction.commit();
+                }
                 if (position == 5) {
                     // 6단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -75,7 +84,14 @@ public class StudyFragment extends Fragment {
                     transaction.replace(R.id.container, fragmentStudyUnit6);
                     transaction.commit();
                 }
-                if (position == 11){
+                if (position == 10) {
+                    // 11단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit11 fragmentStudyUnit11 = new FragmentStudyUnit11();
+                    transaction.replace(R.id.container, fragmentStudyUnit11);
+                    transaction.commit();
+                }
+                if (position == 11) {
                     // 12단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit12 fragmentStudyUnit12 = new FragmentStudyUnit12();
