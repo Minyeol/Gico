@@ -18,6 +18,7 @@ public class FragmentProblemsContent3_1 extends Fragment {
 
     ImageButton homeButton3_1, forwardButton3_1;
 
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
