@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit10.FragmentContent10_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeButton10_1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="31dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 입출력 서식을 지정해서 파일에 문자열을 쓰는 방법을 알아보겠습니다.
+\n파일에 문자열을 쓸 때는 먼저 fopen 함수로 파일을 열어서 파일 포인터를 얻은 뒤 fprintf 함수를 사용합니다(stdio.h 헤더 파일에 선언되어 있습니다). 그 후, fclose로 파일을 닫습니다.
+\n FILE *포인터 이름 = fopen(파일명, 파일 모드);
+\n FILE *fopen(char const *_FileName, char const *_Mode);
+\n성공하면 파일 포인터를 반환하고, 실패하면 NULL을 반환합니다.
+\n fprintf(파일 포인터, 서식, 값1, 값2, ...);**
+\n int fprintf(FILE * const _Stream, char const * const _Format, ...);
+\n성공하면 쓴 문자열의 길이를 반환하고, 실패하면 음수를 반환합니다.
+\n fclose(파일 포인터);
+\n int fclose(FILE *_stream);
+\n성공하면 0을 반환하고, 실패하면 EOF(-1)를 반환합니다.
+\n아래 코드는 함수 사용 예시 입니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/file1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n Visual Studio에서 프로그램을 실행하면 .c 파일이 있는 폴더에 hi.txt 파일이 생성됩니다. 메모장 등을 사용하여 파일을 열어보면 \u02BAHi! 7\u02BA 문자열이 저장된 것을 확인할 수 있습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/file2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n FILE 구조체는 stdio.h 헤더 파일에 정의되있고, 보통 FILE과 *를 합쳐서 \u02BA파일 포인터\u02BA라고 부릅니다. 여기서는 포인터 변수의 이름을 file pointer의 약자로 fp를 사용하겠습니다.
+\n다음은 파일 모드의 종류입니다.
+\n\n 파일 모드의 종류\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/file3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 파일 모드는 보통 \u02BArb\u02BA,\u02BArt\u02BA,\u02BAw+b\u02BA, \u02BAw+t\u02BA와 같이 읽기/쓰기 모드와 텍스트/바이너리 모드를 조합해서 사용합니다. t와 b는 단독으로 사용할 수 없습니다.
+            \n\n이제 파일 포인터를 얻었으니 fprintf 함수로 문자열을 파일에 씁니다. 먼저 앞에서 얻은 파일 포인터를 지정하고 서식과 값을 순서대로 지정하면 됩니다.
+            \n`fprintf(fp, \u02BA%s %d\n\u02BA, \u02BAGIST hi!\u02BA, 7);   // 출력 서식을 지정하여 문자열을 파일에 저장`
+            \n이렇게 하면 \u02BAGIST hi!\u02BA와 정수 7을 합쳐서 문자열 \u02BA GIST hi!7\u02BA이 hi.txt 파일에 저장됩니다.
+            \n파일 쓰기가 끝났으면 반드시 fclose 함수로 파일 포인터를 닫아줍니다. 파일 포인터 fp도 구조체 FILE 크기만큼 동적 메모리를 할당한 것이기 때문에 fclose 함수로 닫아주지 않으면 메모리 누수가 발생합니다.
+            \n`fclose(fp);    // 파일 포인터 닫기`\n"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton10_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton10_1"
+        android:layout_toLeftOf="@+id/forwardButton10_1"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton10_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+</RelativeLayout>

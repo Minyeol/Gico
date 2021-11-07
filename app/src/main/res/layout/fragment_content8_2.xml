@@ -4,23 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit2.FragmentContent2_3" >
+    tools:context=".study.unit8.FragmentContent8_2">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/homeButton2_3"
+        android:layout_above="@+id/homeButton8_2"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="31dp"
         android:background="@color/white">
 
@@ -32,9 +32,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="프로그램을 만들다 보면 두 가지 이상의 다양한 상황이 발생합니다.\n강아지 키우기 게임을 예를 들면 다음과 같습니다." />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 배열은 사실 첫 번째 요소의 주솟값만 담고 있습니다.\n"/>
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -43,14 +44,15 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional12" />
+                android:src="@drawable/array5" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="else if는 조건식을 여러 개 지정하여 각 조건 마다 다른 코드를 실행할 수 있습니다." />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 즉, 배열은 주솟값이기 때문에 포인터에 넣을 수 있습니다. 따라서 다음과 같이 포인터에 배열을 넣은 뒤 포인터에서 인덱스로 요소에 접근할 수 있습니다. 아래는 예시 코드 입니다.\n"/>
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -59,14 +61,22 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional13" />
+                android:src="@drawable/array6" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="다음 예제 코드를 실행시켜 보세요." />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n int *numPtr = numArr;처럼 배열을 포인터에 바로 할당할 수 있습니다. 단, 자료형이 같아야 하며 1차원 배열이라면 *가 한 개인 단일 포인터여야 합니다.
+
+배열을 포인터에 할당한 뒤 포인터를 역참조해보면 배열의 첫 번째 요소의 값이 나옵니다. 마찬가지로 배열 자체도 역참조해보면 배열의 첫 번째 요소의 값이 나옵니다. 즉, 실제로는 배열도 포인터라 할 수 있습니다.
+
+배열의 주소가 들어있는 포인터는 인덱스를 통하여 요소에 접근할 수 있습니다.
+
+배열과 포인터가 다른 점은 sizeof로 크기를 계산했을 때입니다. 배열에 sizeof 연산자를 사용하면 배열이 차지하는 전체 공간이 출력되지만 sizeof로 배열의 주소가 들어있는 포인터의 크기를 구해보면 그냥 포인터의 크기만 나옵니다(32비트라면 4, 64비트라면 8).
+\n\n이제 반복문을 사용하여 배열의 요소를 모두 출력해보겠습니다.\n"/>
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -75,20 +85,23 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional14" />
+                android:src="@drawable/array7" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="이렇게 하면 if, else if의 조건식이 모두 거짓일 때만 else의 코드가 실행됩니다. 여기서는 num1이 3이라 if, else if의 조건식에 모두 만족하지 않습니다. 따라서 마지막 else의 \u02BA 1도 2도 아닙니다.\u02BA가 출력됩니다. if와 else는 한 번만 사용할 수 있지만,else if는 여러 번 사용할 수 있습니다. else if 앞에 else가 오면 컴파일 에러가 발생하므로 주의해야 합니다." />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 반복문에서 for (int i = 0; i \u003C sizeof(numArr) / sizeof(int); i++)처럼 조건식에 sizeof 연산자를 사용하여 배열의 요소 개수를 구한 뒤 반복하였습니다.\n\n
+반복문의 변수 i는 변화식을 통해 1씩 증가하므로 배열의 인덱스에 i를 넣으면 배열의 요소를 순서대로 모두 접근할 수 있습니다.\n"/>
 
         </LinearLayout>
+
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton2_3"
+        android:id="@+id/homeButton8_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -97,14 +110,14 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton2_3"
-        android:layout_toLeftOf="@+id/forwardButton2_3"
-        android:layout_toEndOf="@+id/backButton2_3"
-        android:layout_toRightOf="@+id/backButton2_3"
+        android:layout_toStartOf="@+id/forwardButton8_2"
+        android:layout_toLeftOf="@+id/forwardButton8_2"
+        android:layout_toEndOf="@+id/backButton8_2"
+        android:layout_toRightOf="@+id/backButton8_2"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton2_3"
+        android:id="@+id/forwardButton8_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -116,7 +129,7 @@
         android:src="@drawable/forward_button" />
 
     <ImageButton
-        android:id="@+id/backButton2_3"
+        android:id="@+id/backButton8_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

@@ -4,23 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit2.FragmentContent2_3" >
+    tools:context=".study.unit10.FragmentContent10_4">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/homeButton2_3"
+        android:layout_above="@+id/homeButton10_4"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="31dp"
         android:background="@color/white">
 
@@ -32,9 +32,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="프로그램을 만들다 보면 두 가지 이상의 다양한 상황이 발생합니다.\n강아지 키우기 게임을 예를 들면 다음과 같습니다." />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n 앞서 생성한 hi.txt 파일의 내용을 읽어보겠습니다. 파일을 읽을 때는 stdio.h 헤더 파일에 선언된 fopen 함수로 파일을 열어 파일 포인터를 얻고 fgets 함수로 파일의 내용을 읽습니다.
+\nfgets 함수는 다음과 같이 사용합니다.
+\nfgets(버퍼, 버퍼크기, 파일포인터);
+
+\n  char *fgets(char *_Buffer, int _MaxCount, FILE *_Stream);
+\n  성공하면 읽은 문자열의 포인터를 반환하고, 실패하면 NULL을 반환합니다.
+\n아래 코드는 함수 사용 예시 입니다.\n"/>
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -43,14 +50,27 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional12" />
-
+                android:src="@drawable/file10" />
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/file11" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="else if는 조건식을 여러 개 지정하여 각 조건 마다 다른 코드를 실행할 수 있습니다." />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="/n 이번에는 stdio.h 헤더 파일에 선언된 fread 함수를 사용해 파일에서 문자열을 읽어보겠습니다.
+\nfread 함수는 다음과 같이 사용합니다.
+\nfread(버퍼, 읽기크기, 읽기횟수, 파일포인터);
+\nsize_t fread(void *_Buffer, size_t _ElementSize, size_t _ElementCount, FILE *_Stream);
+\n성공한 읽기 횟수를 반환하고, 실패하면 지정된 읽기 횟수보다 작은 값을 반환합니다.
+\n아래 코드는 함수 사용 예시 입니다. /n"/>
 
             <ImageView
                 android:adjustViewBounds="true"
@@ -59,15 +79,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional13" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="다음 예제 코드를 실행시켜 보세요." />
-
+                android:src="@drawable/file12" />
             <ImageView
                 android:adjustViewBounds="true"
                 android:layout_width="match_parent"
@@ -75,20 +87,14 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:src="@drawable/conditional14" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:text="이렇게 하면 if, else if의 조건식이 모두 거짓일 때만 else의 코드가 실행됩니다. 여기서는 num1이 3이라 if, else if의 조건식에 모두 만족하지 않습니다. 따라서 마지막 else의 \u02BA 1도 2도 아닙니다.\u02BA가 출력됩니다. if와 else는 한 번만 사용할 수 있지만,else if는 여러 번 사용할 수 있습니다. else if 앞에 else가 오면 컴파일 에러가 발생하므로 주의해야 합니다." />
+                android:src="@drawable/file13" />
 
         </LinearLayout>
+
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton2_3"
+        android:id="@+id/homeButton10_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -97,14 +103,14 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton2_3"
-        android:layout_toLeftOf="@+id/forwardButton2_3"
-        android:layout_toEndOf="@+id/backButton2_3"
-        android:layout_toRightOf="@+id/backButton2_3"
+        android:layout_toStartOf="@+id/forwardButton10_4"
+        android:layout_toLeftOf="@+id/forwardButton10_4"
+        android:layout_toEndOf="@+id/backButton10_4"
+        android:layout_toRightOf="@+id/backButton10_4"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton2_3"
+        android:id="@+id/forwardButton10_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -116,7 +122,7 @@
         android:src="@drawable/forward_button" />
 
     <ImageButton
-        android:id="@+id/backButton2_3"
+        android:id="@+id/backButton10_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -126,4 +132,5 @@
         android:layout_marginLeft="69dp"
         android:layout_marginBottom="30dp"
         android:src="@drawable/back_button" />
+
 </RelativeLayout>

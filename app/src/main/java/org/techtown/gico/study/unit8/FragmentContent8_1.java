@@ -1,4 +1,4 @@
-package org.techtown.gico.study.unit2;
+package org.techtown.gico.study.unit8;
 
 import android.os.Bundle;
 
@@ -12,36 +12,39 @@ import android.widget.ImageButton;
 
 import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
+import org.techtown.gico.study.unit2.FragmentContent2_2;
 
-public class FragmentContent2_4 extends Fragment {
-    ImageButton backButton2_4, homeButton2_4;
+public class FragmentContent8_1 extends Fragment {
+    ImageButton homeButton8_1, forwardButton8_1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content2_4, container, false);
 
-        backButton2_4 = rootView.findViewById(R.id.backButton2_4);
-        homeButton2_4 = rootView.findViewById(R.id.homeButton2_4);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content8_1, container, false);
 
-        backButton2_4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 이전 화면으로 전환
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent2_2 fragmentContent2_2 = new FragmentContent2_2();
-                transaction.replace(R.id.container, fragmentContent2_2);
-                transaction.commit();
-            }
-        });
+        homeButton8_1 = rootView.findViewById(R.id.homeButton8_1);
+        forwardButton8_1 = rootView.findViewById(R.id.forwardButton8_1);
 
-        homeButton2_4.setOnClickListener(new View.OnClickListener() {
+        homeButton8_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 홈 화면으로 전환
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 StudyFragment studyFragment = new StudyFragment();
                 transaction.replace(R.id.container, studyFragment);
+                transaction.commit();
+            }
+        });
+
+        forwardButton8_1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // 다음 소단원
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentContent8_2 fragmentContent8_2 = new FragmentContent8_2();
+                transaction.replace(R.id.container, fragmentContent8_2);
                 transaction.commit();
             }
         });
