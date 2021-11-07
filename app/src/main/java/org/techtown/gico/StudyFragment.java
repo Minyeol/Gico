@@ -12,12 +12,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.study.FragmentStudyUnit1;
+import org.techtown.gico.study.FragmentStudyUnit10;
 import org.techtown.gico.study.FragmentStudyUnit11;
 import org.techtown.gico.study.FragmentStudyUnit12;
+import org.techtown.gico.study.FragmentStudyUnit2;
 import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
 import org.techtown.gico.study.FragmentStudyUnit5;
 import org.techtown.gico.study.FragmentStudyUnit6;
+import org.techtown.gico.study.FragmentStudyUnit8;
 
 public class StudyFragment extends Fragment {
     @Nullable
@@ -56,6 +59,13 @@ public class StudyFragment extends Fragment {
                     transaction.replace(R.id.container, fragmentStudyUnit1);
                     transaction.commit();
                 }
+                if (position == 1) {
+                    // 2단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit2 fragmentStudyUnit2 = new FragmentStudyUnit2();
+                    transaction.replace(R.id.container, fragmentStudyUnit2);
+                    transaction.commit();
+                }
                 if (position == 2) {
                     // 3단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -71,7 +81,7 @@ public class StudyFragment extends Fragment {
                     transaction.commit();
                 }
                 if (position == 4) {
-                    // 4단원 페이지로 전환
+                    // 5단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit5 fragmentStudyUnit5 = new FragmentStudyUnit5();
                     transaction.replace(R.id.container, fragmentStudyUnit5);
@@ -82,6 +92,20 @@ public class StudyFragment extends Fragment {
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit6 fragmentStudyUnit6 = new FragmentStudyUnit6();
                     transaction.replace(R.id.container, fragmentStudyUnit6);
+                    transaction.commit();
+                }
+                if (position == 7) {
+                    // 8단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit8 fragmentStudyUnit8 = new FragmentStudyUnit8();
+                    transaction.replace(R.id.container, fragmentStudyUnit8);
+                    transaction.commit();
+                }
+                if (position == 9) {
+                    // 10단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit10 fragmentStudyUnit10 = new FragmentStudyUnit10();
+                    transaction.replace(R.id.container, fragmentStudyUnit10);
                     transaction.commit();
                 }
                 if (position == 10) {
