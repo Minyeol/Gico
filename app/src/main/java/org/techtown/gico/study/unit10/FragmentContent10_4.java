@@ -25,15 +25,14 @@ public class FragmentContent10_4 extends Fragment {
 
         backButton10_4 = rootView.findViewById(R.id.backButton10_4);
         homeButton10_4 = rootView.findViewById(R.id.homeButton10_4);
-        forwardButton10_4 = rootView.findViewById(R.id.forwardButton10_4);
 
         backButton10_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 이전 화면으로 전환
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent10_2 fragmentContent10_2 = new FragmentContent10_2();
-                transaction.replace(R.id.container, fragmentContent10_2);
+                FragmentContent10_3 fragmentContent10_3 = new FragmentContent10_3();
+                transaction.replace(R.id.container, fragmentContent10_3);
                 transaction.commit();
             }
         });

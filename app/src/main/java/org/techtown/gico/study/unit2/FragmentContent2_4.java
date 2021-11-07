@@ -29,8 +29,8 @@ public class FragmentContent2_4 extends Fragment {
             public void onClick(View v) {
                 // 이전 화면으로 전환
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentContent2_2 fragmentContent2_2 = new FragmentContent2_2();
-                transaction.replace(R.id.container, fragmentContent2_2);
+                FragmentContent2_3 fragmentContent2_3 = new FragmentContent2_3();
+                transaction.replace(R.id.container, fragmentContent2_3);
                 transaction.commit();
             }
         });
