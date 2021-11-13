@@ -5,13 +5,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
+import androidx.annotation.Dimension;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import org.techtown.gico.ProblemsFragment;
 import org.techtown.gico.R;
+import org.techtown.gico.SettingsFragment;
 import org.techtown.gico.problems.unit6.FragmentProblemsContent6_2;
+
+import java.util.Set;
 
 public class FragmentProblemsContent12_1 extends Fragment {
 
@@ -22,7 +27,8 @@ public class FragmentProblemsContent12_1 extends Fragment {
                              Bundle savedInstanceState) {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content12_1_problems, container, false);
-
+        TextView textView = rootView.findViewById(R.id.textView121212);
+        textView.setTextSize(Dimension.SP, SettingsFragment.TEXT_SIZE);
         homeButton12_1 = rootView.findViewById(R.id.homeButton12_1);
         //forwardButton12_1 = rootView.findViewById(R.id.forwardButton12_1);
 
