@@ -11,8 +11,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
-import org.techtown.gico.study.unit1.FragmentContent1;
-import org.techtown.gico.study.unit1.FragmentContent3;
 
 public class FragmentContent4_2 extends Fragment {
     ImageButton backButton4_2, homeButton4_2, forwardButton4_2;
