@@ -15,6 +15,7 @@ import org.techtown.gico.OnSmallUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
+import org.techtown.gico.UnitTemplate;
 import org.techtown.gico.study.unit1.FragmentContent1_1;
 import org.techtown.gico.study.unit1.FragmentContent1_2;
 import org.techtown.gico.study.unit1.FragmentContent1_3;
@@ -26,8 +27,11 @@ public class FragmentStudyUnit1 extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit1, container, false);
 
+        UnitTemplate unitTemplate;
         RecyclerView smallRecyclerView1 = rootView.findViewById(R.id.smallRecyclerView1);
-
+        unitTemplate = rootView.findViewById(R.id.unitTemplate1);
+        unitTemplate.setUnit("1. 기본 입출력");
+        unitTemplate.setImage(R.drawable.condition_icon);
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext(), LinearLayoutManager.VERTICAL, false);
         smallRecyclerView1.setLayoutManager(layoutManager);
         SmallUnitAdapter adapter = new SmallUnitAdapter();

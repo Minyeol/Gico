@@ -20,7 +20,9 @@ import org.techtown.gico.study.FragmentStudyUnit3;
 import org.techtown.gico.study.FragmentStudyUnit4;
 import org.techtown.gico.study.FragmentStudyUnit5;
 import org.techtown.gico.study.FragmentStudyUnit6;
+import org.techtown.gico.study.FragmentStudyUnit7;
 import org.techtown.gico.study.FragmentStudyUnit8;
+import org.techtown.gico.study.FragmentStudyUnit9;
 
 public class StudyFragment extends Fragment {
     @Nullable
@@ -94,11 +96,25 @@ public class StudyFragment extends Fragment {
                     transaction.replace(R.id.container, fragmentStudyUnit6);
                     transaction.commit();
                 }
+                if (position == 6) {
+                    // 7단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit7 fragmentStudyUnit7 = new FragmentStudyUnit7();
+                    transaction.replace(R.id.container, fragmentStudyUnit7);
+                    transaction.commit();
+                }
                 if (position == 7) {
                     // 8단원 페이지로 전환
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentStudyUnit8 fragmentStudyUnit8 = new FragmentStudyUnit8();
                     transaction.replace(R.id.container, fragmentStudyUnit8);
+                    transaction.commit();
+                }
+                if (position == 8) {
+                    // 9단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentStudyUnit9 fragmentStudyUnit9 = new FragmentStudyUnit9();
+                    transaction.replace(R.id.container, fragmentStudyUnit9);
                     transaction.commit();
                 }
                 if (position == 9) {

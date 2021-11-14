@@ -5,6 +5,18 @@
     android:layout_height="match_parent"
     tools:context=".study.FragmentStudyUnit1">
 
+    <org.techtown.gico.UnitTemplate
+        android:id="@+id/unitTemplate1"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp" />
+
     <ImageButton
         android:id="@+id/homeButton"
         android:layout_width="wrap_content"
@@ -37,16 +49,4 @@
         android:layout_marginTop="127dp"
         android:layout_marginBottom="0dp" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="363dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/chapter7" />
 </RelativeLayout>
