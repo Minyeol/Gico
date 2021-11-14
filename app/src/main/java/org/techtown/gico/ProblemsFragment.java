@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.techtown.gico.problems.FragmentProblemsUnit1;
 import org.techtown.gico.problems.FragmentProblemsUnit10;
+import org.techtown.gico.problems.FragmentProblemsUnit11;
 import org.techtown.gico.problems.FragmentProblemsUnit12;
 import org.techtown.gico.problems.FragmentProblemsUnit2;
 import org.techtown.gico.problems.FragmentProblemsUnit3;
@@ -126,6 +127,13 @@ public class ProblemsFragment extends Fragment {
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                     FragmentProblemsUnit10 fragmentProblemsUnit10 = new FragmentProblemsUnit10();
                     transaction.replace(R.id.container, fragmentProblemsUnit10);
+                    transaction.commit();
+                }
+                if (position == 10) {
+                    // 10단원 페이지로 전환
+                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentProblemsUnit11 fragmentProblemsUnit11 = new FragmentProblemsUnit11();
+                    transaction.replace(R.id.container, fragmentProblemsUnit11);
                     transaction.commit();
                 }
                 if (position == 11) {
