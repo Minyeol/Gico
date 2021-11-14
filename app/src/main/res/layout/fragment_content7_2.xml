@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit7.FragmentContent7_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeButton7_2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="31dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n다음은 포인터를 사용해서 해당 변수의 값을 바꿔보겠습니다. \n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer4" />
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n위와 비슷한 코드이지만 이번에는 여기서 *p에 저장된 주소로 이동해 5를 대입합니다.
+
+\n\n마지막으로 포인터 변수를 사용해서 swap함수를 구현해보겠습니다.
+\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer6" />
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n두 수를 a와 b에 입력 받고, 두 수를 바꿔주는 swap 함수를 만들어서 출력하는 코드입니다. a와 b는 지역 변수이므로 main을 벗어나면 값이 유효하지 않습니다. 따라서 swap(&amp;a, &amp;b)와 같이 a와 b의 주소 값을 넘겨주어야 합니다. 그리고 두 수를 바꾸기 위해 임시 변수인 temp 변수를 생성하고 역참조를 이용해서 a와 b의 값을 가져와 바꿔줍니다. \n"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton7_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton7_2"
+        android:layout_toLeftOf="@+id/forwardButton7_2"
+        android:layout_toEndOf="@+id/backButton7_2"
+        android:layout_toRightOf="@+id/backButton7_2"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton7_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton7_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

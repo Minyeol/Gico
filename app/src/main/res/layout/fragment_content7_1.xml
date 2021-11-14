@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit7.FragmentContent7_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeButton7_1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="31dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n1. 포인터\n\n
+포인터(Pointer)는 사용하고 싶은 메모리 주소를 가리키는 변수입니다. int형은 정수를 char는 문자를 저장한다면, 포인터는 주소 값을 저장하고 있다고 이해할 수 있습니다. 포인터를 사용하면 주소 값만을 통해 메모리에 접근하여 해당 변수를 간편하게 조작할 수 있습니다. 일반 변수는 메모리를 컴퓨터가 관리하지만 포인터 변수는 사용자가 직접 메모리를 관리할 수 있게 됩니다. 이외에도 메모리 동적 할당이 가능하다는 장점이 있습니다.
+
+\n\n다음은 포인터 변수를 선언하는 방법입니다. 참조 연산자(*)를 사용해서 선언합니다. 아래 세가지는 모두 같은 코드입니다. *의 위치와 상관없이 선언 가능합니다.
+\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n먼저 포인터를 사용해서 메모리 주소와 전달된 변수 a의 값을 출력해보겠습니다.\n"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer2" />
+
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/pointer3" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:text="\n일반 변수 a와 포인터 변수 p를 각각 선언하고 a의 주소 값을 p에 저장하는 코드입니다. 여기서 &amp; 라는 새로운 참조 연산자가 쓰이게 되는데 &amp;는 해당 변수의 주소 값을 반환하는 역할을 합니다. 또한 print 함수에서 p와 *p의 쓰임이 다르다는 것을 확인할 수 있는데, 정리해보면
+
+\n\np : 포인터 변수가 가리키는 대상의 주소를 나타내고
+\n*p : 포인터가 가리키는 대상의 값을 나타냅니다.
+\n"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton7_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton7_1"
+        android:layout_toLeftOf="@+id/forwardButton7_1"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton7_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+</RelativeLayout>
