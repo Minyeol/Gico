@@ -17,6 +17,14 @@ import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
 import org.techtown.gico.UnitTemplate;
+import org.techtown.gico.problems.unit12.FragmentProblemsContent12_1;
+import org.techtown.gico.problems.unit3.FragmentProblemsContent3_1;
+import org.techtown.gico.problems.unit3.FragmentProblemsContent3_2;
+import org.techtown.gico.study.unit3.FragmentContent3_3;
+import org.techtown.gico.study.unit3.FragmentContent3_4;
+import org.techtown.gico.study.unit3.FragmentContent3_5;
+import org.techtown.gico.study.unit3.FragmentContent3_6;
+import org.techtown.gico.study.unit3.FragmentContent3_7;
 
 public class FragmentProblemsUnit12 extends Fragment {
 
@@ -45,7 +53,7 @@ public class FragmentProblemsUnit12 extends Fragment {
         smallRecyclerView1.setLayoutManager(layoutManager);
         SmallUnitAdapter adapter = new SmallUnitAdapter();
 
-        adapter.addItem(new SmallUnit("죄송합니다.", "이 단원에는 아직 문제가 준비되지 않았습니다."));
+        adapter.addItem(new SmallUnit("12-1.", "주어진 seed로 랜덤 추출하기"));
 
         smallRecyclerView1.setAdapter(adapter);
 
@@ -53,14 +61,14 @@ public class FragmentProblemsUnit12 extends Fragment {
             @Override
             public void onItemClick(SmallUnitAdapter.ViewHolder holder, View view, int position) {
                 SmallUnit item = adapter.getItem(position);
-                /*
                 if (position == 0) {
-                    // 3-1단원 페이지로 전환(content4_1)
+                    // 12-1단원 페이지로 전환(content12_1)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                    FragmentProblemsContent3_1 fragmentProblemsContent3_1 = new FragmentProblemsContent3_1();
-                    transaction.replace(R.id.container, fragmentProblemsContent3_1);
+                    FragmentProblemsContent12_1 fragmentProblemsContent12_1 = new FragmentProblemsContent12_1();
+                    transaction.replace(R.id.container, fragmentProblemsContent12_1);
                     transaction.commit();
                 }
+                /*
                 else if (position == 1) {
                     // 3-2단원 페이지로 전환(content4_2)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
