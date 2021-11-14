@@ -1,6 +1,5 @@
 package org.techtown.gico.study;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,9 +17,6 @@ import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
 import org.techtown.gico.StudyFragment;
 import org.techtown.gico.UnitTemplate;
-import org.techtown.gico.study.unit1.FragmentContent1;
-import org.techtown.gico.study.unit1.FragmentContent2;
-import org.techtown.gico.study.unit1.FragmentContent3;
 import org.techtown.gico.study.unit4.FragmentContent4_1;
 import org.techtown.gico.study.unit4.FragmentContent4_2;
 import org.techtown.gico.study.unit4.FragmentContent4_3;
