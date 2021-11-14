@@ -10,11 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import org.techtown.gico.OnSmallUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
+import org.techtown.gico.StudyFragment;
 import org.techtown.gico.UnitTemplate;
 import org.techtown.gico.study.unit2.FragmentContent2_1;
 import org.techtown.gico.study.unit2.FragmentContent2_2;
@@ -30,6 +32,7 @@ public class FragmentStudyUnit8 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        ImageButton homeButton8;
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit8, container, false);
         UnitTemplate unitTemplate;
         RecyclerView smallRecyclerView8 = rootView.findViewById(R.id.smallRecyclerView8);
@@ -37,6 +40,17 @@ public class FragmentStudyUnit8 extends Fragment {
         unitTemplate.setUnit("8. 배열");
         unitTemplate.setImage(R.drawable.condition_icon);
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext(), LinearLayoutManager.VERTICAL, false);
+
+        homeButton8 = rootView.findViewById(R.id.homeButton8);
+        homeButton8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                StudyFragment studyFragment = new StudyFragment();
+                transaction.replace(R.id.container, studyFragment);
+                transaction.commit();
+            }
+        });
         smallRecyclerView8.setLayoutManager(layoutManager);
         SmallUnitAdapter adapter = new SmallUnitAdapter();
 
