@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton4_3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="역함수"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView313"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="\n\n     자연수 N에 대하여 0부터 N-1까지의 모든 정수를 포함하는 집합 X가 있고, 그 위에서 일대일 대응 함수 f : X -> X가 정의된다. 우리는 이 일대일 함수를 배열로 표현할 수 있다. 예를 들어 N = 5일 때 배열 {0, 2, 4, 1, 3}은 f(0)=0, f(1)=2, f(2)=4, f(3)=1, f(4)=3을 만족시키는 함수 f를 표현할 때 사용할 수 있다.\n
+ 이제 X에 포함된 정수 a에 대하여, f(x)=a를 만족시키는 정수 x를 찾아야 하는 연산을 해야 한다고 가정하자. 단, 이 연산을 한 번만 하는 것이 아니라, M번 해야 한다. M이 작은 수라면 우리는 x에 일일이 0부터 숫자를 대입하기 시작해, 맞을 때까지 대입을 반복하는 식으로 이 연산을 수행할 수 있을 것이다. 그렇다면 평균적으로 연산을 N/2 * M번, 최악의 경우 N * M번 수행하므로 시간복잡도는 O(NM)이다. 그러나 M이 큰 수라면 어떨까? 그렇다면 f의 역함수를 미리 구해 놓는 것이 빠를 것이다. 정렬 알고리즘을 사용하여 f의 역함수를 구하는 과정을 수행할 수 있는데, 도전해 보자.\n
+ 정렬 알고리즘은 아무거나 사용해도 좋다. 시간복잡도는 사용하는 정렬 알고리즘에 따라 달라질 수 있다. O(n^2)인 정렬 알고리즘을 사용할 경우 시간복잡도는 O(N^2), O(nlogn)인 정렬 알고리즘을 사용할 경우 시간복잡도는 O(NlogN)이다.\n\n
+
+입력 : 다음 수들이 입력으로 주어진다. N은 항상 25이다.\n
+ 입력1) 18 0 12 4 13 3 11 23 14 6 9 10 22 20 7 15 19 17 16 2 24 8 21 5 1\n
+ 입력2) 8 4 15 10 0 6 17 5 7 1 11 18 9 2 12 24 23 22 16 19 14 21 13 20 3 \n
+
+출력 : 각각의 케이스에 대하여 다음을 출력하면 성공이다.\n
+ 출력1) 1 24 19 5 3 23 9 14 21 10 11 6 2 4 8 15 18 17 0 16 13 22 12 7 20\n
+ 출력2) 4 9 13 24 1 7 5 8 0 12 3 10 14 22 20 2 18 6 11 19 23 21 17 16 15\n\n
+
+ 문제의 설명을 작성한 사람 : 송혜근
+\n\n
+"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton4_3"
+        android:layout_toLeftOf="@+id/forwardButton4_3"
+        android:layout_toEndOf="@+id/backButton4_3"
+        android:layout_toRightOf="@+id/backButton4_3"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

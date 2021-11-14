@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton4_3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="반시계 방향"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView313"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="\n\n   큰 볼록 다각형을 만드는 문제로, 좌표평면에서 점들을 각도 순으로 정렬하는 것은 볼록 껍질 문제를 푸는 중요한 방법론 중의 하나이다.\n
+ 좌표평면에서 제1사분면 위에 정렬되지 않은 n개의 좌표가 주어진다. 직선 y=0이 원점을 중심으로 반시계 방향으로 회전하기 시작할 때, 가장 먼저 닿는 점부터 가장 나중에 닿는 점까지의 순으로 각 점들을 정렬하시오.\n
+ 실수 자료형(float, double)을 쓸 수 없습니다.\n\n
+
+입력 : 첫째 줄의 좌표평면 위의 점의 개수 n이 주어진다. 둘째 줄부터 각 점의 x좌표, y좌표가 차례대로 주어진다.\n\n
+
+입력 예시 1 :\n
+3\n
+1 2\n
+1 4\n
+2 3\n\n
+
+출력 예시 1 :\n
+2 3\n
+1 2\n
+1 4\n
+"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton4_3"
+        android:layout_toLeftOf="@+id/forwardButton4_3"
+        android:layout_toEndOf="@+id/backButton4_3"
+        android:layout_toRightOf="@+id/backButton4_3"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>

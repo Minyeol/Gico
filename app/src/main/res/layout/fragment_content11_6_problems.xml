@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmenu1"
+    tools:context=".study.unit1.FragmentContent3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeButton4_3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="대칭이동"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView313"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="\n\n 철환이는 대칭이동과 사랑에 빠졌다. 따라서 배열에 대칭이동 연산을 적용하려고 한다. 철환이는 원소의 개수가 30개 이하이고 0과 1로만 이루어진 배열 arr을 갖고 있다. 예를 들어\n
+ arr = {1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1}\n
+ 이라고 하자. 철환이는 arr의 부분 배열에 대칭이동 연산을 적용시켜서 arr을 다른 배열로 바꿀 수 있는데, 여기에는 규칙이 있다. 선택할 수 있는 부분 배열은 반드시 시작과 끝이 1이어야 한다는 것이다. 예를 들어 {1, 0, 0, 0, 1, 1}은 선택할 수 있는 부분 배열이고 여기에 대칭이동 연산을 적용시켜서\n
+ arr# = {1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1}\n
+로 만들 수 있지만, {1, 0, 0}은 선택할 수 있는 부분 배열이 아니다. 한편, 어떤 배열 arr에 대하여 이 배열의 점수는 다음과 같이 계산한다.\n\n
+
+int score = 0;\n
+for (int i = 0; i \< n; i++) {\n
+score *= 2;\n
+score += arr[i];\n
+} (단, n은 배열의 길이)\n\n
+
+ 철환이는 배열의 점수를 최대로 하고 싶다. 철환이를 도와 배열의 최대 점수를 알려주는 프로그램을 작성하시오.\n\n
+
+ 입력 : 첫째 줄에 배열의 길이 n이, 둘째 줄에 배열이 입력으로 주어진다. n은 30 이하이다.\n
+ 입력1)\n
+ 10\n
+ 1 0 0 1 0 1 0 0 0 1 – 출력: 657\n\n
+
+ 입력2)\n
+ 15\n
+ 1 1 0 0 0 1 0 0 0 1 1 1 0 0 0 – 출력: 30856\n\n
+
+ 입력3)\n
+ 20\n
+ 1 1 1 1 0 0 0 0 1 1 1 0 1 0 0 0 1 1 1 1 – 출력: 1047073\n\n
+
+ 문제를 만든 사람 : 송혜근  \n\n
+"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/forwardButton4_3"
+        android:layout_toLeftOf="@+id/forwardButton4_3"
+        android:layout_toEndOf="@+id/backButton4_3"
+        android:layout_toRightOf="@+id/backButton4_3"
+        android:src="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/forwardButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/forward_button" />
+
+    <ImageButton
+        android:id="@+id/backButton4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/back_button" />
+
+</RelativeLayout>
