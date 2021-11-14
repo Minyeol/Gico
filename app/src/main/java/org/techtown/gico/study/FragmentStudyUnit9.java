@@ -14,23 +14,24 @@ import org.techtown.gico.OnSmallUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
+import org.techtown.gico.study.unit9.FragmentContent9_1;
+import org.techtown.gico.study.unit9.FragmentContent9_2;
 
 public class FragmentStudyUnit9 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit1, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit9, container, false);
 
-        RecyclerView smallRecyclerView1 = rootView.findViewById(R.id.smallRecyclerView1);
+        RecyclerView smallRecyclerView1 = rootView.findViewById(R.id.smallRecyclerView9);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext(), LinearLayoutManager.VERTICAL, false);
         smallRecyclerView1.setLayoutManager(layoutManager);
         SmallUnitAdapter adapter = new SmallUnitAdapter();
 
-        adapter.addItem(new SmallUnit("1-1.", "소단원1"));
-        adapter.addItem(new SmallUnit("1-2.", "소단원2"));
-        adapter.addItem(new SmallUnit("1-3.", "소단원3"));
+        adapter.addItem(new SmallUnit("9-1.", "구조체란?"));
+        adapter.addItem(new SmallUnit("9-2.", "구조체의 활용"));
 
         smallRecyclerView1.setAdapter(adapter);
 
@@ -39,24 +40,18 @@ public class FragmentStudyUnit9 extends Fragment {
             public void onItemClick(SmallUnitAdapter.ViewHolder holder, View view, int position) {
                 SmallUnit item = adapter.getItem(position);
                 if (position == 0) {
-                    // 1-1단원 페이지로 전환(content1)
+                    // 9-1단원 페이지로 전환(content1)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                    FragmentContent1 fragmentContent1 = new FragmentContent1();
-                    transaction.replace(R.id.container, fragmentContent1);
+                    FragmentContent9_1 fragmentContent9_1 = new FragmentContent9_1();
+                    transaction.replace(R.id.container, fragmentContent9_1);
                     transaction.commit();
                 }
+
                 else if (position == 1) {
-                    // 1-2단원 페이지로 전환(content2)
+                    // 9-2단원 페이지로 전환(content2)
                     FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                    FragmentContent2 fragmentContent2 = new FragmentContent2();
-                    transaction.replace(R.id.container, fragmentContent2);
-                    transaction.commit();
-                }
-                else if (position == 2) {
-                    // 1-3단원 페이지로 전환(content3)
-                    FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                    FragmentContent3 fragmentContent3 = new FragmentContent3();
-                    transaction.replace(R.id.container, fragmentContent3);
+                    FragmentContent9_2 fragmentContent9_2 = new FragmentContent9_2();
+                    transaction.replace(R.id.container, fragmentContent9_2);
                     transaction.commit();
                 }
             }
