@@ -37,21 +37,30 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,study).commit();
         bottomNavigation = findViewById(R.id.bottom_navigation);
 
-        final FragmentTransaction[] fragmentTransaction = new FragmentTransaction[1];
-
-
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.tab1:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, study).commit();
+                        FragmentManager fragmentManager1 = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
+                        fragmentTransaction1.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_right, R.anim.enter_from_right, R.anim.exit_to_right);
+                        fragmentTransaction1.addToBackStack(null);
+                        fragmentTransaction1.replace(R.id.container, study).commit();
                         return true;
                     case R.id.tab2:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, problems).commit();
+                        FragmentManager fragmentManager2 = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction2 = fragmentManager2.beginTransaction();
+                        fragmentTransaction2.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_right, R.anim.enter_from_right, R.anim.exit_to_right);
+                        fragmentTransaction2.addToBackStack(null);
+                        fragmentTransaction2.replace(R.id.container, problems).commit();
                         return true;
                     case R.id.tab3:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, settings).commit();
+                        FragmentManager fragmentManager3 = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction3 = fragmentManager3.beginTransaction();
+                        fragmentTransaction3.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_right, R.anim.enter_from_right, R.anim.exit_to_right);
+                        fragmentTransaction3.addToBackStack(null);
+                        fragmentTransaction3.replace(R.id.container, settings).commit();
                         return true;
                 }
                 return false;
