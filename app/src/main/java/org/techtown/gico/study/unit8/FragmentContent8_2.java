@@ -2,6 +2,7 @@ package org.techtown.gico.study.unit8;
 
 import android.os.Bundle;
 
+import androidx.annotation.Dimension;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -9,9 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
+import org.techtown.gico.TextSizeSetting;
 import org.techtown.gico.study.unit2.FragmentContent2_1;
 import org.techtown.gico.study.unit2.FragmentContent2_3;
 
@@ -23,7 +26,14 @@ public class FragmentContent8_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content8_2, container, false);
-
+        TextView textView = rootView.findViewById(R.id.textView821);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
+        textView = rootView.findViewById(R.id.textView822);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
+        textView = rootView.findViewById(R.id.textView823);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
+        textView = rootView.findViewById(R.id.textView824);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
         backButton8_2 = rootView.findViewById(R.id.backButton8_2);
         homeButton8_2 = rootView.findViewById(R.id.homeButton8_2);
         forwardButton8_2 = rootView.findViewById(R.id.forwardButton8_2);

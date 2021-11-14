@@ -30,6 +30,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView831"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -49,6 +50,7 @@
                 android:src="@drawable/array8" />
 
             <TextView
+                android:id="@+id/textView832"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -70,6 +72,7 @@
                 android:src="@drawable/array9" />
 
             <TextView
+                android:id="@+id/textView833"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -93,6 +96,7 @@
                 android:src="@drawable/array10" />
 
             <TextView
+                android:id="@+id/textView834"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -111,6 +115,7 @@
                 android:src="@drawable/array11" />
 
             <TextView
+                android:id="@+id/textView835"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -129,6 +134,7 @@
                 android:src="@drawable/array12" />
 
             <TextView
+                android:id="@+id/textView836"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -149,6 +155,7 @@
                 android:src="@drawable/array13" />
 
             <TextView
+                android:id="@+id/textView837"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"

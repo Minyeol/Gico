@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit1.FragmentContent3">
+    tools:context=".study.unit3.FragmentContent3_6">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -30,6 +30,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView361"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -60,6 +61,7 @@
                 android:src="@drawable/loop62" />
 
             <TextView
+                android:id="@+id/textView362"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -90,6 +92,7 @@
                 android:src="@drawable/loop64" />
 
             <TextView
+                android:id="@+id/textView363"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit1.FragmentContent1">
+    tools:context=".problems.unit6.FragmentProblemsContent6_1">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/homeButton3_1"
+        android:layout_above="@+id/homeButtonProblem6_1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -39,7 +39,7 @@
                 android:textSize="25dp" />
 
             <TextView
-                android:id="@+id/textView313"
+                android:id="@+id/textViewP611"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
@@ -57,7 +57,7 @@ a_1 = 1, a_n+1 >= 2 * a_n\n
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton3_1"
+        android:id="@+id/homeButtonProblem6_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -68,12 +68,12 @@ a_1 = 1, a_n+1 >= 2 * a_n\n
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton3_1"
-        android:layout_toLeftOf="@+id/forwardButton3_1"
+        android:layout_toStartOf="@+id/forwardButtonProblem6_1"
+        android:layout_toLeftOf="@+id/forwardButtonProblem6_1"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton3_1"
+        android:id="@+id/forwardButtonProblem6_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

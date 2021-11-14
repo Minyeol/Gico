@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit1.FragmentContent3">
+    tools:context=".study.unit3.FragmentContent3_2">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -30,6 +30,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView321"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -58,6 +59,7 @@ for(초기식;조건식;변화식) {\n
                 android:src="@drawable/loop21" />
 
             <TextView
+                android:id="@+id/textView322"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"

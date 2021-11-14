@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit1.FragmentContent3">
+    tools:context=".study.unit5.FragmentContent5_4">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/homeButton4_3"
+        android:layout_above="@+id/homeButton5_4"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/textView541"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -45,6 +46,7 @@
                 android:src="@drawable/func21" />
 
             <TextView
+                android:id="@+id/textView542"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -65,6 +67,7 @@
                 android:src="@drawable/func4" />
 
             <TextView
+                android:id="@+id/textView543"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -85,7 +88,7 @@
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton4_3"
+        android:id="@+id/homeButton5_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -94,14 +97,12 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton4_3"
-        android:layout_toLeftOf="@+id/forwardButton4_3"
-        android:layout_toEndOf="@+id/backButton4_3"
-        android:layout_toRightOf="@+id/backButton4_3"
+        android:layout_toEndOf="@+id/backButton5_4"
+        android:layout_toRightOf="@+id/backButton5_4"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/backButton4_3"
+        android:id="@+id/backButton5_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

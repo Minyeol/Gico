@@ -30,6 +30,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView811"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -48,6 +49,7 @@
                 android:src="@drawable/array1" />
 
             <TextView
+                android:id="@+id/textView812"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -57,6 +59,7 @@
 배열에 값이 저장된 공간을 요소(element)라고 합니다. 배열에서 각 요소에 접근하려면 배열 뒤에 [ ] (대괄호)를 사용하며 [ ] 안에 각 요소의 인덱스를 넣으면 됩니다.\n" />
 
             <TextView
+                android:id="@+id/textView813"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -74,6 +77,7 @@
                 android:src="@drawable/array2" />
 
             <TextView
+                android:id="@+id/textView814"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -91,6 +95,7 @@
                 android:src="@drawable/array3" />
 
             <TextView
+                android:id="@+id/textView815"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -116,6 +121,7 @@
                 android:src="@drawable/array4" />
 
             <TextView
+                android:id="@+id/textView816"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"

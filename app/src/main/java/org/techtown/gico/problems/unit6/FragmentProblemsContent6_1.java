@@ -5,28 +5,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
+import androidx.annotation.Dimension;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import org.techtown.gico.ProblemsFragment;
 import org.techtown.gico.R;
+import org.techtown.gico.TextSizeSetting;
 import org.techtown.gico.problems.unit3.FragmentProblemsContent3_2;
 
 public class FragmentProblemsContent6_1 extends Fragment {
 
-    ImageButton homeButton3_1, forwardButton3_1;
+    ImageButton homeButtonProblem6_1, forwardButtonProblem6_1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content6_1_problems, container, false);
+        TextView textView = rootView.findViewById(R.id.textViewP611);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
+        homeButtonProblem6_1 = rootView.findViewById(R.id.homeButtonProblem6_1);
+        forwardButtonProblem6_1 = rootView.findViewById(R.id.forwardButtonProblem6_1);
 
-        homeButton3_1 = rootView.findViewById(R.id.homeButton3_1);
-        forwardButton3_1 = rootView.findViewById(R.id.forwardButton3_1);
-
-        homeButton3_1.setOnClickListener(new View.OnClickListener() {
+        homeButtonProblem6_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 홈 화면으로 전환
@@ -37,7 +41,7 @@ public class FragmentProblemsContent6_1 extends Fragment {
             }
         });
 
-        forwardButton3_1.setOnClickListener(new View.OnClickListener() {
+        forwardButtonProblem6_1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

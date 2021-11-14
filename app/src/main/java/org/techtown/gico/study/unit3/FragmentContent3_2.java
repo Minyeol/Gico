@@ -5,12 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
+import androidx.annotation.Dimension;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import org.techtown.gico.R;
 import org.techtown.gico.StudyFragment;
+import org.techtown.gico.TextSizeSetting;
 import org.techtown.gico.study.unit6.FragmentContent6_1;
 import org.techtown.gico.study.unit6.FragmentContent6_3;
 
@@ -21,7 +24,10 @@ public class FragmentContent3_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content3_2, container, false);
-
+        TextView textView = rootView.findViewById(R.id.textView321);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
+        textView = rootView.findViewById(R.id.textView322);
+        textView.setTextSize(Dimension.SP, TextSizeSetting.TEXT_SIZE);
         backButton3_2 = rootView.findViewById(R.id.backButton3_2);
         homeButton3_2 = rootView.findViewById(R.id.homeButton3_2);
         forwardButton3_2 = rootView.findViewById(R.id.forwardButton3_2);

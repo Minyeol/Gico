@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appmenu1"
-    tools:context=".study.unit1.FragmentContent3">
+    tools:context=".study.unit5.FragmentContent5_3">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/homeButton4_3"
+        android:layout_above="@+id/homeButton5_3"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -30,6 +30,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView531"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -59,6 +60,7 @@
                 android:src="@drawable/func12" />
 
             <TextView
+                android:id="@+id/textView532"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
@@ -70,7 +72,7 @@
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/homeButton4_3"
+        android:id="@+id/homeButton5_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -79,14 +81,14 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
-        android:layout_toStartOf="@+id/forwardButton4_3"
-        android:layout_toLeftOf="@+id/forwardButton4_3"
-        android:layout_toEndOf="@+id/backButton4_3"
-        android:layout_toRightOf="@+id/backButton4_3"
+        android:layout_toStartOf="@+id/forwardButton5_3"
+        android:layout_toLeftOf="@+id/forwardButton5_3"
+        android:layout_toEndOf="@+id/backButton5_3"
+        android:layout_toRightOf="@+id/backButton5_3"
         android:src="@drawable/home_button" />
 
     <ImageButton
-        android:id="@+id/forwardButton4_3"
+        android:id="@+id/forwardButton5_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -98,7 +100,7 @@
         android:src="@drawable/forward_button" />
 
     <ImageButton
-        android:id="@+id/backButton4_3"
+        android:id="@+id/backButton5_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
