@@ -62,7 +62,7 @@ public class FragmentProblemsUnit6 extends Fragment {
         adapter.addItem(new SmallUnit("6-3.", "철환 다항식"));
         adapter.addItem(new SmallUnit("6-4.", "태보"));
         adapter.addItem(new SmallUnit("6-5.", "이진 탐색으로 2의 제곱근 구하기"));
-        adapter.addItem(new SmallUnit("6-6.", "이진수 게"));
+        adapter.addItem(new SmallUnit("6-6.", "이진수 게임"));
 
         smallRecyclerView1.setAdapter(adapter);
 
