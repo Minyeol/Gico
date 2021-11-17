@@ -10,11 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import org.techtown.gico.OnSmallUnitItemClickListener;
 import org.techtown.gico.R;
 import org.techtown.gico.SmallUnit;
 import org.techtown.gico.SmallUnitAdapter;
+import org.techtown.gico.StudyFragment;
 import org.techtown.gico.UnitTemplate;
 import org.techtown.gico.study.unit1.FragmentContent1_1;
 import org.techtown.gico.study.unit1.FragmentContent1_2;
@@ -39,7 +41,17 @@ public class FragmentStudyUnit1 extends Fragment {
         adapter.addItem(new SmallUnit("1-1.", "표준 입출력"));
         adapter.addItem(new SmallUnit("1-2.", "기본 자료형"));
         adapter.addItem(new SmallUnit("1-3.", "기본 입출력"));
-
+        ImageButton homeButton1;
+        homeButton1 = rootView.findViewById(R.id.homeButton1);
+        homeButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                StudyFragment studyFragment = new StudyFragment();
+                transaction.replace(R.id.container, studyFragment);
+                transaction.commit();
+            }
+        });
         smallRecyclerView1.setAdapter(adapter);
 
         adapter.setOnItemClickListener(new OnSmallUnitItemClickListener() {

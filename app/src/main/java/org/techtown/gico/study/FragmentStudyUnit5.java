@@ -35,7 +35,7 @@ public class FragmentStudyUnit5 extends Fragment {
         UnitTemplate unitTemplate;
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_study_unit6, container, false);
         unitTemplate = rootView.findViewById(R.id.unitTemplate6);
-        unitTemplate.setImage(R.drawable.recur_icon);
+        unitTemplate.setImage(R.drawable.function_icon);
         unitTemplate.setUnit("5. 함수");
         homeButton4 = rootView.findViewById(R.id.homeButton4);
         homeButton4.setOnClickListener(new View.OnClickListener() {

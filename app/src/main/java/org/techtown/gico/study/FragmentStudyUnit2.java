@@ -36,7 +36,7 @@ public class FragmentStudyUnit2 extends Fragment {
         unitTemplate.setUnit("2. 조건문");
         unitTemplate.setImage(R.drawable.condition_icon);
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext(), LinearLayoutManager.VERTICAL, false);
-        homeButton2 = rootView.findViewById(R.id.homeButton2);
+        homeButton2 = rootView.findViewById(R.id.homeButton22);
         homeButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

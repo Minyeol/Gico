@@ -21,8 +21,8 @@ public class FragmentContent9_1 extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_content9_1, container, false);
 
-        homeButton9_1 = rootView.findViewById(R.id.homeButton7_1);
-        forwardButton9_1 = rootView.findViewById(R.id.forwardButton7_1);
+        homeButton9_1 = rootView.findViewById(R.id.homeButton9_1);
+        forwardButton9_1 = rootView.findViewById(R.id.forwardButton9_1);
 
         homeButton9_1.setOnClickListener(new View.OnClickListener() {
             @Override
